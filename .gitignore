@@ -1,0 +1,5 @@
+#tmux ignores
+*.log
+
+#VIM ignores
+
