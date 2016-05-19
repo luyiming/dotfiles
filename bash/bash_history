@@ -1,0 +1,2000 @@
+cd Github/Mshell/
+exit -l
+exit --help
+cd Github/Mshell/
+vim Mshell.cpp 
+cd Github/Mshell/
+make
+./Mshell
+man waitpid
+vim fork.cpp 
+man dup2
+cd Github/Mshell/
+l
+cat Makefile
+cat Makefile > out.txt | grep "g++"
+cat Makefile | grep "g++"
+grep "g++"
+cat /etc/rc.local
+locate out.txt
+cd Github/Mshell/
+ls
+vim Mcp.cpp
+man cp
+man 2 open
+man read
+man write
+man 2 write
+man write
+man read
+man 2 open
+cd Github/Mshell/
+ll
+./Mcp ./Makefile ./out.txt
+rm out.txt
+ll
+rm out.txt
+./Mcp ./Makefile ./out.txt
+ll
+cat out.txt
+sudo cat out.txt
+ll
+rm out.txt
+l
+sudo rm out.txt
+ll
+./Mcp ./Makefile ./out.txt
+ll
+cat out.txt
+ll
+cd Github/Mshell/
+ll
+vim Mcp.cpp
+man cp
+cd Github/Mshell/
+ls
+cat Makefile
+cat 123
+grep 123
+cat Makefile > out.txt | echo
+cat Makefile | echo
+cat Makefile | grep "g++"
+cat Makefile > out.txt| grep "g++"
+l
+ll
+rm out.txt
+cat Makefile > out.txt| grep "g++"
+ll
+cat out.txt
+cat Makefile | grep "g++"
+grep "g++" Makefile
+12
+man cp
+cat --version
+cat 123 --version
+man cp
+man wc
+man cp
+cd Github/Mshell/
+cat ~/Github/Mshell/Makefile | wc
+man chdir
+cd ..
+ll
+rm fork.cpp Mcat.cpp 
+l
+lll
+ll
+man dup2
+cd Mshell/
+grep "g++" /home/magnolias/Github/Mshell/Makefile
+grep g++ /home/magnolias/Github/Mshell/Makefile
+cat | grep "123"
+cat | grep "123" &
+jobs
+fg
+ls
+cd..
+cd.///Mshell
+cd .///Mshell
+cd ./Mshell
+cd ..
+cd ./Mshell
+cd ..
+cd .///Mshell
+cp Makefile
+cp
+cd ..
+ls
+cp Mshell ~/
+cd Mshell/
+ll
+cp fork fork.cpp Makefile
+man dirent
+man dirent.h
+man readdir
+cd 
+ls
+cd test
+ls
+cd Mshell/
+ls
+./Mshell
+cd 
+locate test
+locate test/test2/123.txt
+locate 123.txt
+cd Github/Mshell/
+vim Mcp.cpp 
+cd Github/Mshell/
+ls
+./Mshell
+cd ~/test
+ls
+ll
+cd -
+./Mshell 
+cp
+ls
+Mcp
+./Mcp
+./Mcp 123
+cp 123
+ls
+ll
+./Mcp fork.txt test.txt
+cd ..
+ls
+cp Mshell fork.cpp
+cp Mshell fork.cpp -r
+ls
+Mshell/Mcp fork.cpp test.txt
+ls
+Mshell/Mcp
+Mshell/Mcp fork.cpp
+Mshell/Mcp fork.cpp test.txt
+ls
+cat test.txt
+ls
+Mshell/Mcp fork.cpp test.txt
+ls
+Mshell/Mcp fork.cpp test.txt
+ls
+rm test.txt
+Mshell/Mcp fork.cpp test.txt
+ls
+test.txt
+cat test.txt
+rm test.txt
+ls
+ll
+Mshell/Mcp /home/magnolias/Github/fork.cpp /home/magnolias/Github/test.txt
+ls
+cat test.txt
+Mshell/Mcp /home/magnolias/Github/fork.cpp /home/magnolias/Github/test.txt
+Mshell/Mcp fork.cpp test.txt
+Mshell/Mcp /home/magnolias/Github/fork.cpp /home/magnolias/Github/test.txt
+Mshell/Mcp fork.cpp test2.txt
+Mshell/Mcp fork.cpp test/test2.txt
+Mshell/Mcp fork.cpp test2.txt
+Mshell/Mcp fork.cpp test/test2.txt
+Mshell/Mcp fork.cpp test.txt
+ls -la
+ls -ls
+man 3 mkdir
+man 2 mkdir
+man 2 stat
+man 2 mkdir
+ll
+mkdir test
+ll
+cp Mshell test -r
+cp Mshell/ test -r
+cp Mshell/ test/ -r
+Mshell/Mcp Mshell test
+Mshell/Mcp Mshell test -r
+stat Mshell/children.cpp
+ls
+stat Mshell
+Mshell/Mcp Mshell test -r
+man readdir
+Mshell/Mcp Mshell test -r
+cp Mshell test
+cp Mshell test -r
+ll
+Mshell/Mcp fork.cpp test.cpp
+ll
+Mshell/Mcp fork.cpp test
+Mshell/Mcp Mshell test -r
+cd test
+ls
+ll
+ls
+./Mshell
+sudo ./Mshell
+ls
+cd ..
+cd -
+cd 
+cd Github/
+ls
+
+Mshell/Mcp fork.cpp .
+Mshell/Mcp fork.cpp ./
+ls
+cp fork.cpp test/
+cp fork.cpp test/ -r
+cp fork.cpp test
+cp fork.cpp test/
+Mshell/Mcp Mshell test
+Mshell/Mcp Mshell test -r
+Mshell/Mcp fork.cpp test.cpp
+Mshell/Mcp forl.cpp .
+Mshell/Mcp fork.cpp .
+Mshell/Mcp fork.cpp ./
+Mshell/Mcp fork.cpp 123
+Mshell/Mcp fork.cpp ~/testluyiming.cpp
+cd Github/Mshell/
+ll
+vim Mcp.cpp 
+cd Github/Mshell/
+ls
+ll
+vim Mcp.cpp 
+cd Github/
+ll
+cp fork.cpp test
+ls
+ll
+cat test
+rm test
+ll
+rm test/
+cp Makefile fork.cpp test
+cp Makefile fork.cpp test/
+cp fork.cpp .
+cp fork.cpp ./
+cp fork.cpp ./123
+ls
+rm 123
+opendir
+ls
+Mshell/Mcp fork.cpp .
+man realpath
+Mshell/Mcp fork.cpp .
+man realpath
+Mshell/Mcp fork.cpp .
+man realpath
+Mshell/Mcp fork.cpp .
+Mshell/Mcp fork.cpp ./123.cpp
+ls
+rm 123.cpp
+Mshell/Mcp fork.cpp ./123.cpp
+Mshell/Mcp Mshell ./
+Mshell/Mcp Mshell ./ -r
+Mshell/Mcp Mshell ./test -r
+cd test
+ll
+./Mshell
+sudo ./Mshell
+ls -l
+man chmod
+man 2 chmod
+Mshell/Mcp Mshell ./test -r
+cd ..
+Mshell/Mcp Mshell ./test -r
+ls test/ -l
+Mshell/Mcp Mshell ./test -r
+ls test/ -l
+ls Mshell/ -l
+man 2 chmod
+man 2 stat
+Mshell/Mcp Mshell ./test -r
+ls -l test/
+Mshell/Mcp Mshell ./test -r
+ls -l test/
+test/Mshell
+Mshell/Mcp Mshell/Mshell ./
+Mshell/Mcp Mshell/Mshell ./Mshell123
+ls
+ll
+./Mshell123 
+cd Mshell/
+ls
+ll
+make
+make clean
+make
+bin/Mshell
+cd ..
+ll
+cp Mshell .
+cp Mshell . -r
+cp Mshell test -r
+ll
+cp Mshell test
+cp Mshell test -r
+cp Mshell test/ -r
+ll
+cp Mshell/ test
+cp Mshell/ test -r
+ls
+ll
+rm test -r
+ls
+ll
+cp Mshell/ test -r
+ll
+cp 123.cpp/ test.cpp
+ll
+cp 123.cpp test
+ls
+ll
+cp 123.cpp test
+cp 123.cpp test/
+Mshell/bin/Mcp 
+ll
+rm test -r
+ll
+Mshell/bin/Mcp Mshell .
+Mshell/bin/Mcp Mshell ./ -r
+cp Mshell .
+cp Mshell . -r
+cd Mshell/
+make
+git
+git status
+git init
+git status
+git add .
+git status
+git -m "Msh and Mcp"
+git commit -m "Msh and Mcp"
+git status
+make
+bin/Mshell 
+cd test
+cd ..
+cd 
+cd test
+ls
+cp Github .
+cp Github . -r
+cp Github ./ -r
+cp Github/ ./ -r
+ll
+ls
+l
+~/Github/Mshell/bin/Mshell 
+cd test
+ls
+cd ..
+ls
+cp Github/ ./test -r
+sudo cp Github/ ./test -r
+sudo ~/Github/Mshell/bin/Mshell 
+~/Github/Mshell/bin/Mshell 
+exit
+~/Github/Mshell/bin/Mshell 
+exit
+cd Github/Mshell/
+vim Mshell.cpp 
+cd Github/Mshell/
+ll
+man cmp
+ls
+cmp Mcat.cpp Mcp.cpp 
+cd ..
+cd
+cd test
+ll
+cmp 1 2
+man cmp
+cmp 1 2 -b
+cmp 1 2 -l
+cmp 1 2 -lb
+man cmp
+cmp 1 2 -lb
+cmp 1 2
+cmp 1 2 -b
+cmp 1 2 -l
+cmp
+cmp 1
+cmp 1 -
+ll
+cmp 1 2 test/Github/Mshell/Mcp.cpp 
+cmp 1 2 -b
+cmp 1 2 -c
+cmp 1 2 -cb
+man cmp
+man cmp 1 2
+cmp 1 
+cmp 1 2
+cmp 1 2 -v
+cmp 1 2 -l
+man cmp
+cd Github/
+ls
+cd Mshell/
+ll
+diff Mcat.cpp Mwc.cpp 
+ls
+cmp Mcat.cpp Mcat.cpp 
+cd ..
+cd..
+cd ...
+cd ..
+ls
+cmp 1 2
+cmp 1 2 -l
+cmp 1 2 -b
+cmp 1 2 -c
+man cmp
+cmp 1 2 -l
+ll
+cmp 1 2
+cmp
+exit
+cd Github/Mshell/
+l
+vim Mcmp.cpp 
+cd test
+ll
+cmp 1 2 -l
+cat 1
+cmp 1 2 -b
+cmp 1 2
+cmp 1 -
+cmp 1 2
+cmp ./1 ./2
+cmp 1 -
+cmp 1 2 -l
+cmp 1 2 -b
+cmp 1 2
+cmp 1 2 -lb
+cmp 1 2 -bl
+cmp 1 2 -l
+cmp 1 2 -b
+cmp 1 2
+vim ~/Github/Mshell/Makefile 
+cd Github/Mshell/
+ls
+cd test
+ll
+~/Github/Mshell/bin/Mcmp 1 2
+ls
+~/Github/Mshell/bin/Mcmp 1 2 -l
+~/Github/Mshell/bin/Mcmp 1 2 -lb
+~/Github/Mshell/bin/Mcmp 1 2
+~/Github/Mshell/bin/Mcmp 1 2 -l
+~/Github/Mshell/bin/Mcmp 1 2 -b
+~/Github/Mshell/bin/Mcmp 1 2 -bl
+cmp 1 2
+cmp 1 2 -l
+cmp 1 2 -b
+cmp 1 2 -bl
+man cmp
+man ls
+cd Github/Mshell/
+ll
+vim Mshell.cpp 
+cd Github/Mshell/
+ls -l
+ps -aux
+l
+ll
+lll
+man exec
+man kill
+man 2 kill
+alias
+man setpgid
+man ps
+man curses
+apt-cache search curses
+locate curses.h
+man ncurses
+apt-cache search ncurses
+sudo apt-get install libncurses5
+sudo apt-get install libncurses5-dev
+sudo apt-get install ncurses-doc
+man curses
+man ncurses
+locate curses.h
+man ncurses
+man ls cp
+man man
+man cp > ~/cpman
+man cp
+man cp &
+job
+bg
+fg
+cd Github/Mshell/
+ll
+vim Mcat.cpp 
+man cat
+cat
+cd Github/Mshell/
+ll
+Mcat fork.cpp -
+./Mcat fork.cpp -
+man cat
+cat Makefile 
+cat Makefile -n
+cat Makefile -b
+cat Makefile -bs
+cat Makefile -T
+cat Makefile -E
+man cat
+cat Makefile -v
+man cat
+ll
+cp 123 456
+man DIR
+man 2 DIR
+man 2 opendir
+man opendir
+man 3 DIR
+man 2 stat
+man opendir
+cd Github/Mshell/
+ls
+git status
+git add .
+git status
+git commit -m "Mcat.cpp"
+git remote add origin git@github.com:luyiming/Mshell.git
+git remote
+git push -u origin master
+git status
+vim
+cd Github/Mshell/
+cd bin
+Mshell
+./Mshell
+jobs
+ps
+./Mshell
+man ps
+ps -a
+ps -A
+man ps
+ps -f
+ps -g
+ps -au
+ps -o pid,ppid,pgid,sid,tpgid,tty,comm
+./Mshell
+ps -o pid,ppid,pgid,sid,tpgid,tty,comm
+fg
+ll
+./Mshell
+ll
+./Mshell
+ll
+./Mshell
+ps
+exit
+cd Github/Mshell/
+cd bin
+./Mshell
+man ps
+./Mshell
+ls
+ll
+ps
+ps -o pid,ppid,pgid,sid,tpgid,tty,comm
+./Mshell
+ll
+./Mshell
+ll
+./Mshell
+ll
+./Mshell
+ll
+ps
+kill 6573
+ps -TREM
+kill 6573 -TREM
+kill -TREM 6573
+ps
+tty
+ps -ax
+tty
+echo “hello” > /dev/tty
+isatty
+man isatty
+man tty
+man tdgetpgrp
+man tcgetpgrp
+man getpgrp
+man waitpid
+man 2 close
+jobs
+fg
+ps
+cd Github/Mshell/
+cd bin
+./Mshell
+man waitpid
+./Mshell
+man waitpid
+./Mshell
+cd Github/Mshell/
+cd bin
+ll
+./Mshell
+cd Github/Mshell/bin/
+./Mshell
+ps -o pid,ppid,pgid,sid,tpgid,tty,comm
+./Mshell
+cd Github/Mshell/bin/
+./Mshell
+cd Github/Mshell/
+ll
+vim Mshell.cpp
+cd Github/M
+cd Github/Mshell/
+ls
+git status
+git checkout -- .
+git status
+git branch
+git branch --help
+git checkout -b dev
+git branch
+git status
+git checkout --help
+cd Mshell
+cd bin
+./Mshell
+ps -o pid,ppid,pgid,sid,tpgid,tty,comm
+ln -s Mshell ~/Github/Mshell
+ll
+ls
+ln -s ~/Github/Mshell ~/Mshell
+ls
+ll
+cd Mshell
+ls
+make
+cd bin
+ls
+./Mshell
+vim ../Mshell.cpp 
+alias
+man tcgetpgrp
+cd Mshell
+cd bin
+ll
+./Mshell
+cd Mshell
+cd bin
+./Mshell
+cd Mshell
+ls
+vim Mshell.cpp 
+man execv
+ll
+ls
+l
+ll > test.txt
+l
+cat test.txt
+ls
+rm test.txt
+>test.txt ls
+ls
+rm test.txt
+l
+ls >
+ls > 
+cd Mshell
+cd bin
+cd ..
+make
+cd bin
+./Mshell
+cd Mshell
+make
+cd bin
+./Mshell
+cd Mshell
+bin/Mshell
+cd Mshell/bin/
+ps
+ps -o pid,ppid,pgid,sid,tpgid,tty,comm
+./Mshell
+cd M
+CD Mshell
+cd Mshell
+ls
+make
+bin/Mshell
+ps
+ll
+make
+bin/Mshell
+cd Mshell
+make
+bin/Mshell
+cd Mshell
+make
+bin/Mshell
+cd Mshell/bin/
+./Mshell
+echo 123 | exit
+exit | cat
+cd Mshell | cat
+cd Mshell
+make
+bin/Mshell
+ll
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+exit
+cd Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+ll
+bin/Mshell
+ps
+ll
+make
+bin/Mshell
+make
+bin/Mshell
+ll
+vim Mshell.cpp 
+cd Mshell
+ls
+ll
+git status
+git add .
+git status
+git commit -m "job control v1.0"
+git status
+cd Mshell
+make
+bin/Mshell
+ll
+make
+bin/Mshell
+ll
+make
+bin/Mshell
+make
+bin/Mshell
+ps
+ll
+make
+bin/Mshell
+ll
+make
+bin/Mshell
+ll
+cd Mshell
+cd bin
+./Mshell
+cd test
+ls
+ll
+cd Github/Mshell/
+make
+bin/Mshell
+make
+clear
+./Mshell
+cd bin
+clear
+./Mshell
+clear
+./Mshell 
+cd ..
+make
+cd bin
+Mshell
+./Mshell
+clear
+./Mshell
+clear
+./Mshell
+ps
+./Mshell
+clear
+./Mshell
+clear
+./Mshell 
+clear
+./Mshell 
+clear
+./Mshell 
+ps -o pid,ppid,pgid,sid,tpgid,tty,comm
+ls
+ls -l
+cd test
+cler
+cls
+clear
+cd ..
+clear
+cd test
+ls -l
+cat children.cpp 
+wc children.cpp 
+wc children.cpp -Llwc
+cmp 1 2
+cmp 1 2 -b
+cmp -l 1 2
+cmp children.cpp 1 -l
+man cmp
+clear
+cd ..
+clear
+cd test
+clear
+cd..
+cd ..
+clear
+ll
+clear
+l
+cd test
+ls -l
+cat 2
+cmp 1 2
+cmp 1 2 -b
+cp Github ./dest
+cp Github ./dest2 -r
+l
+cd test1
+cd dest2
+ls
+cp Github ./dest2 -r
+cd ..
+cp Github ./dest2 -r
+clear
+cd 
+clear
+cd test
+ls -l
+cat 2
+cmp 1 2
+cmp 1 2 -b
+cp Github ./
+cp Github ./ -r
+cp Github ./dest2 -r
+ls
+cd dest2/Mshell/bin/
+ls
+./Mshell 
+man cp
+ps -o pid,ppid,pgid,sid,tpgid,tty,comm
+clear
+cd
+clear
+cd test
+ls
+cat 2
+cmp 1 2
+cmp 1 2 -b
+wc children.cpp -Llcw
+cp Github ./
+cp Github/ ./ -r
+cp Github/ ./dest2 -r
+cd dest2/Mshell/bin
+ls
+./Mshell
+ps -o pid,ppid,pgid,sid,tpgid,tty,comm
+cat
+ps -o pid,ppid,pgid,sid,tpgid,tty,comm
+cat ~/Github/Mshell/Makefile | grep g++
+man cmp
+cd Mshell
+cd bin/
+./Mshell
+Github/Mshell/bin/Mshell 
+cd 桌面
+ll
+cd Mshell/
+ls
+ll
+make
+bin/Mshell 
+ll
+man cmp
+man cmp > ../cmp.txt
+man man wc
+man wc
+man wc > ../wc_en.txt
+man cat > ../cat_en.txt
+make
+bin/Mshell 
+make
+bin/Mshell 
+sudo apt-get install compiz-plugins-extra
+sudo apt-get install GParted
+sudo apt-get install chmsee
+sudo apt-get install gnome-web-photo
+cd 桌面
+ln -s ~ .
+gcc --version
+apt-cache search clang
+clang --version
+clang --help
+mann clang
+man clang
+locate GL/gl.h
+locate GL
+apt-cache search opengl
+apt-cache search opengl-dev
+cmatrix
+sudo apt-get install sl
+sl
+sl --help
+ls
+ll
+l
+sl-h
+cat &
+jobs
+fg
+& cat
+locate opengl
+locate opengl | grep "[^QT]"
+locate opengl | grep "[^Qt]"
+locate opengl | grep "[^Q][^t]"
+path
+PATH
+$PATH
+vim --version
+vim
+cd Mshell
+ls
+cim Mshell.cpp 
+vim Mshell.cpp 
+telnet
+ls
+cd 桌面
+ls
+vim net.cpp
+man socket
+telnet 127.0.0.1 18888
+telnet 127.0.0.1 30000
+cd Mshell
+ls
+git status
+git add .
+git add . --all
+git status
+git log
+git commit -m "job control v1.0"
+git status
+git push origin master
+git push origin dev
+git status
+git origin
+git branch
+cat
+jobs
+sleep
+sleep --help
+sleep 2
+sleep 2&
+jobs
+fg %1
+jobs
+cat
+jobs
+cat
+jobs
+fg
+jobs
+sleep 3
+jobs
+sleep 3&
+jobs
+sleep 3&
+jobs
+fg
+jobs
+sleep 10
+fg
+sleep 10&
+jobs
+fg
+jobs
+sleep 3&
+jobs
+cat &
+jobs
+locate vim &
+jobs
+locate vim > test.txt&
+jobs
+locate v > test.txt&
+jobs
+sslocal
+jobs1
+sslocal &
+jobs
+fg --help
+man fg
+fg -help
+fg -h
+sudo apt-get update &
+jobs
+fg
+jobs
+fg
+sudo apt-get update &
+jobs
+job
+jobs
+jobs -l
+kill 5072
+cat &
+jobs
+cat &
+sleep 3 &
+cat
+bg
+cat &
+cd Mshell
+cd bin
+Mshell
+./Mshell
+ls
+ll
+cd ..
+mske
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+ll
+mmake
+make
+mmake
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+cat &
+jobs
+jobs -l
+make
+bin/Mshell
+fg %1
+jobs
+fg %2
+make
+bin/Mshell
+gedit
+gedit&
+jobs
+fg
+bg
+jobs
+cat
+jobs
+sleep 3&
+jobs
+make
+cd Mshell
+make
+bin/Mshell
+sleep 10&
+bg
+cat
+bg
+jobs
+fg
+bg
+bg %10
+make
+bin/Mshell
+sleep 3 &
+cat&
+sleep 3 &
+jobs
+sleep 10&
+jobs
+make
+bin/Mshell
+make
+l
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+jobs
+cat
+cd Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+ls
+git status
+git add .
+git commit -m "fg & bg command"
+git push origin dev
+git branch
+git log
+vim Mshell
+cd Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+exit
+cd Mshell
+bin/Mshell
+vim Mshell.cpp 
+make
+bin/Mshell 
+exit
+cd Mshell
+cmp Makefile Mcat.cpp 
+cmp Makefile Mcat.cpp -l
+cmp Makefile Mcat.cpp -b
+cmp Makefile Mcat.cpp -bl
+cmp Makefile Mcat.cpp -l
+cmp Makefile Mcat.cpp -l > ~/test.txt
+cmp Makefile Mcat.cpp -lb > ~/test.txt
+cmp Makefile Mcat.cpp -lb
+man cmp
+cd Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+make
+bin/Mshell
+cmp Makefile -
+ls
+ll
+bin/Mshell
+make
+bin/Mshell
+cd Mshell
+ls
+vim Mcmp.cpp 
+fg
+cd Mshell
+ls
+cmp Makefile Mcat.cpp 
+make
+bin/Mshell 
+exit
+ls
+ls --color=auto
+cd Mshell
+g++ -o distance distance.cpp 
+./distance 
+ls
+vim .check
+sort .check
+sort
+sort --help
+sort .check -r
+sort .check
+sort .check -r
+vim .check
+cd Mshell
+l
+g++ -o distance distance.cpp 
+./distance 
+cd Mshell/bin/
+./Mshell 
+ls -q
+ls -aa
+ls -a
+ls-aa
+ls -m
+ls -x
+ls -z
+ls --help
+alias
+alias -A=121212
+../make
+alias -A=121212
+./Mshell 
+cd Mshell
+bin/Mshell 
+alias
+alias jobs='ls'
+alias
+jobs
+ls
+jobs -l
+alias
+alias l='la' ls='l'
+l
+bin/Mshell 
+alias
+l
+man alias
+alias --help
+alias -h
+alias -?
+help alias
+alias -p
+alias
+alias ls = l
+alias c = cd
+alias c=cd
+alias
+c ..
+alias q=q a=a
+alias
+alias a
+alias -a
+alias -p
+alias -p a
+alias -p a=a
+a alias
+alias a=
+alias
+a
+s
+alias -r
+alias -p a
+help alias
+alias a =
+alias a
+alias =
+alias ==
+alias ==''
+alias p=
+alias p
+alias a p
+lias   a
+alias  a
+alias a='a  '
+alias a
+alias a''''
+alias a = 'aa'a'
+
+a
+a
+a
+a
+a
+
+alias a='a'
+alias a='a''aa'
+alias
+alias a='a
+'
+alias a='a
+
+
+
+alias a="a"
+alias
+alias a='a
+aa'aa
+alias
+alias a=a'a'
+alias
+alias a=a'a'a
+alias
+alias a'a
+'
+alias a b='a=
+'
+alias a b='qq'
+exit
+cd Mshell
+bin/Mshell 
+sleep 10
+jobs
+fg
+jobs
+sleep 100
+fg
+job
+jobs
+fg
+jobs
+fg
+bin/Mshell 
+cd Mshell
+vim Mshell.cpp 
+exit
+cd Mshell
+bin/Mshell 
+exit
+cd Mshell
+bin/Mshell 
+make
+bin/Mshell 
+ls
+make
+bin/Mshell 
+make
+bin/Mshell 
+vim Mshell.cpp 
+cat --version
+cd Mshell
+make
+bin/Mshell 
+man cp > man/cp.txt 
+cat -s
+cat aa
+cat -p
+cat --help
+vim Mcat.cpp 
+make
+bin/Mshell 
+make
+bin/Mshell 
+cd Mshell
+cd man/
+man cat > cat.txt
+make
+cd ..
+bin/Mshell 
+cd cd Mshell
+cd Mshell
+make
+bin/Mshell 
+make
+bin/Mshell 
+make
+bin/Mshell 
+ls
+git status
+git add .
+git commit -m "job control bug fix"
+git status
+make
+bin/Mshell 
+make
+bin/Mshell 
+make
+bin/Mshell 
+make
+bin/Mshell 
+man
+man s
+man -p
+man --help
+man cp -w
+man -w
+ls /usr/local/man
+less
+less /usr/local/man/man1
+cd /usr/local/man/man1
+ls
+l
+cd
+cd Mshell
+make
+bin/Mshell 
+make
+bin/Mshell 
+bin/Mshell 
+cd Mshell
+make
+bin/Mshell
+history
+cd Mshell
+bin/Mshell
+history --help
+vim .msh_history 
+cd Mshell
+make
+bin/Mshell 
+cd 桌面
+ls
+cd write-a-C-interpreter-step-6/
+ls
+make
+vim Makefile 
+make
+vim Makefile 
+gcc
+make
+vim Makefile 
+make
+vim Makefile 
+man open
+man 3 open
+man 2 open
+gcc -o xc xc.c
+ls
+l
+xc ./hello.c 
+./xc hello.c 
+./xc -s hello.c 
+gcc -o xc-tutor xc-tutor.c
+./xc-tutor hello.c
+gcc -o xc-tutor xc-tutor.c -m32
+gcc --help
+gcc -o xc-tutor xc-tutor.c -m32
+sudo apt-get install gcc-multilib
+sudo apt-get install libc6-dev-i386
+gcc -o xc-tutor xc-tutor.c -m32
+./xc-tutor hello.c
+./xc-tutor -s hello.c > text.txt
+./xc-tutor hello.c -s > text.txt
+gcc -o xc xc.c -m32
+ls
+xc -s ./hello.c 
+./xc -s hello.c 
+./xc -s hello.c > out.txt
+man 2 open
+man 2 read
+cd Mshell
+ls
+cd ..
+cd 桌面
+ls
+cd write-a-C-interpreter-step-6/
+ls
+g++ -o xc xc.c -m32
+cd
+cd Mshell
+ls
+g++ -o xc xc.cpp -m32
+sudo apt-get install g++-multilib
+sudo apt-get install libc6-dev-i386
+sudo apt-get install g++-multilib
+sudo apt-get install libc6-dev-i386
+g++ -o xc xc.cpp -m32
+sudo apt-get install --reinstall binutils
+apt-get -f install
+sudo apt-get -f install
+g++ -o xc xc.cpp -m32
+g++ -o xc xc.cpp -m32 -L/usr/lib32
+sudo apt-get install g++-4.8-multilib
+sudo apt-get install gcc-multilib g++-multilib libc6-i386 libc6-dev-i386
+sudo apt-get install g++-4.8-multilib
+sudo apt-get install lib32stdc++-4.8-dev g++-4.8-multilib
+sudo apt-get install lib32stdc++ lib32stdc++-4.8-dev g++-4.8-multilib
+ls /usr/lib32
+g++ -o xc xc.cpp -m32
+g++ -o xc xc.cpp
+cd Mshell
+bin/Mshell 
+cd 桌面
+ls 
+cd write-a-C-interpreter-step-6/
+ls
+cat out.txt 
+ls
+./xc -s hello.c 
+cd Mshell
+ls
+gcc -o xc xc.c -m32
+ls
+make
+bin/Mshell 
+ls
+gcc -o msh msh.c -m32
+ls
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+ls
+./msh
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+./msh hello.c -s
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+./msh  hello.c
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+./msh hello.c
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+./msh hello.c
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+./msh hello.c
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+cd Mshell
+gcc -o msh msh.c -m32
+ls
+./msh hello.c -s
+./msh -s hello.c
+./msh  hello.c
+gcc -o msh msh.c -m32
+./msh  hello.c
+gcc -o msh msh.c -m32
+./msh  hello.c
+gcc -o msh msh.c -m32
+./msh  hello.c
+gcc -o msh msh.c -m32
+./msh -s  hello.c
+gcc -o msh msh.c -m32
+./msh -s  hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh hello.c
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+./msh hello.c
+./msh -s hello.c
+./msh hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+./msh  hello.c
+./msh -s hello.c
+./msh  hello.c
+./msh -d hello.c
+./msh  hello.c
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+gcc -o msh msh.c -m32
+./msh -d hello.c
+cd 桌面
+cd write-a-C-interpreter-step-6/
+ls
+cat out.txt
+cd Mshell
+bin/Mshell 
+cd Mshell
+LS
+ls
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+gcc -o msh msh.c -m32
+./msh -s hello.c
+cd Mshell
+ls
+bin/Mshell 
+vim ./.vimrc
+git
+vim
+?
+exit
+set -g status-fg yellow
+exit
+ls
+tmux ls
+tmux
+vim .tmux.conf 
+exit
+ls
+l
+ll
+vim ./.vimrcexit
+exit
+tmux ls
+tmux attach
+exit
+tmux ls
+exit
+tmux ls
+exit
+vim --version
+vim
+login
+exit
+exit
+exit
+exit
+exit
+exit
+tmux --help
+tmux ?
+tmux
+tmux --help
+tmux -c vim
+tmux show-options
+show-options
+show-options -g
+tmux show-options g
+tmux show-options -g
+tmux
+tmux select-layout even-horizontal
+tmux select-layout even-vertical
+exit
+tmux ls
+tmux new -h
+tmux new --h
+exit
+exit
+vim
+exit
+sudo apt-get install tmux
+apt-get -f install
+sudo apt-get -f install
+sudo apt-get remove gcc
+apt-get help
+sudo apt-get autoremove
+sudo apt-get remove gcc-4.8-multilib
+sudo apt-get remove gcc-multilib
+sudo apt-get remove gcc-multilib gcc-4.8-multilib
+sudo apt-get remove gcc-multilib gcc-4.8-multilib libc6-dev-x32
+sudo apt-get autoremove
+apt-get help
+apt-get list
+apt-get -l
+sudo apt-get clean
+dpkg -s gcc
+sudo apt-get remove gcc-multilib
+sudo apt-get remove g++-multilib
+dpkg -l
+dpkg -l | grep gcc
+sudo apt-get remove gcc
+sudo apt-get autoremove gcc
+gcc --version
+sudo apt-get autoremove  gcc-4.9-base:i386
+sudo apt-get autoremove  readline
+dpkg -l | grep readline
+sudo apt-get install tmux
+tmux
+ls
+l
+ll
+l
+ls
+ls -l
+ll
+vim .tmux.conf
+tmux
+vim .tmux.conf
+tmux
+vim .tmux.conf
+tmux
+vim .tmux.conf
+tmux
+tmux ls
+tmux
+tmux ls
+tmux attach
+tmux
+tmux attach
+tmux ls
+tmux
+man tmux
+tmux
+tmux attach
+tmux ls
+tmux
+tmux ls
+tmux
+vim
+vim '/home/magnolias/桌面/新建文件夹/.vimrc' 
+exit
+:q
+exit
+:q
+exit
+sudo apt-get install ctags
+sudo apt-get install cscope
+vim
+cd /usr/share/vim/vim74
+ls
+l
+ll
+ls
+vim vimrc_example.vim 
+cd 
+ls
+cd 桌面
+ls
+l
+ll
+vim .vimrc 
+exit
+vim '/home/magnolias/无标题文档' 
+vim
+vim '/home/magnolias/无标题文档' 
+vim '/home/magnolias/123' 
+vim
+tmux
+vim
+tmux
+vim
+tmux
+vim
+ls
+ll
+cd Github/
+LS
+cd Mshell/
+ls
+l
+ll
+vim Mshell.cpp 
+vim .vimrc
+cd Github/Mshell/
+ls
+vim Mshell.cpp 
+cd Github/
+cd Mshell/
+vim Mshell.cpp 
+cd Github/Mshell/
+vim Mshell.cpp 
+tmux -2
+alias
+alias tmux="tmux -2"
+ls
+alias
+tux
+tmux
+tmus ls
+tmux ls
+cd /etc/vim
+ls
+l
+ll
+ls
+cd Github/Mshell/
+ls
+sudo apt-get install ipython3
+ll
+ls
+l
+ll
+python -v
+ipython --version
+python --version
+python3 --version
+sudo apt-get install ipython
+ipython --version
+ipython3 --version
+locate ipython3
+locate ipython
+ipython
+ipython3
+m .vimrc
+cd Github/Mshell/
+ls
+vim Mshell.cpp 
+cd Github/
+cd Mshell/
+vim Mshell.cpp 
+cd Github/Mshell/
+vim Mshell.cpp 
+tmux -2
+alias
+alias tmux="tmux -2"
+ls
+alias
+tux
+tmux
+tmus ls
+tmux ls
+cd /etc/vim
+ls
+l
+ll
+ls
+cd Github/Mshell/
+ls
+sudo apt-get install ipython3
+ll
+ls
+l
+ll
+tmux ls
+tmux ls
+exit
+tmux kill-window
+tmux ls
+tmux kill-window
+tmux ls
+tmux kill-window
+tmux ls
+tmux
+tmux ls
+tmux
+alias
+ls
