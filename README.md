@@ -2,7 +2,8 @@
 
 my dotfiles
 
-usage
+### usage
 
-git clone git@github.com:luyiming/dotfiles.git
-link all the files you need, like this:ln -s ~/dotfiles/vim/vimrc ~/.vimrc
+1. git clone git@github.com:luyiming/dotfiles.git
+
+2. link all the files you need, like this:ln -s ~/dotfiles/vim/vimrc ~/.vimrc
