@@ -1,0 +1,170 @@
+: 1463700121:0;alias
+: 1463700171:0;alias curl='curl --socks5 127.0.0.1:1080 '
+: 1463700174:0;alias
+: 1463700242:0;ls
+: 1463700243:0;l
+: 1463700245:0;la
+: 1463700366:0;ls
+: 1463700374:0;tmux
+: 1463700493:0;killall tmux
+: 1463700495:0;tmux
+: 1463700567:0;killall tmux
+: 1463700575:0;tmux
+: 1463700596:0;ls
+: 1463700599:0;alias
+: 1463700641:0;l
+: 1463700668:0;ls dotfiles
+: 1463700674:0;mkdir dotfiles/zsh
+: 1463700681:0;mv .zshrc dotfiles/zsh
+: 1463700702:0;mv dotfiles/zsh/.zshrc zshrc
+: 1463700706:0;ls dotfiles/zsh
+: 1463700719:0;mv zshrc dotfiles/zsh
+: 1463700720:0;ls dotfiles/zsh
+: 1463700731:0;ln -s dotfiles/zsh/zshrc .zshrc
+: 1463700733:0;l
+: 1463700760:0;mv .zsh_history dotfiles/zsh/zsh_history
+: 1463700895:0;l
+: 1463700907:0;cd dotfiles
+: 1463700952:0;..
+: 1463700956:0;cd .oh-my-zsh
+: 1463700957:0;ls
+: 1463700958:0;l
+: 1463700962:0;vim oh-my-zsh.sh
+: 1463701247:0;alias
+: 1463701625:0;tmux
+: 1463701631:0;alias
+: 1463701638:0;ls
+: 1463701640:0;l
+: 1463701641:0;la
+: 1463701643:0;ll
+: 1463701651:0;alias
+: 1463701873:0;tmux
+: 1463701876:0;cd dotfiles
+: 1463701882:0;gdt
+: 1463701888:0;alias
+: 1463701893:0;alias | grep gdt
+: 1463701901:0;gdt
+: 1463701938:0;alias
+: 1463701948:0;sudo
+: 1463702580:0;alias
+: 1463702620:0;history
+: 1463702624:0;alias
+: 1463702836:0;basg
+: 1463702838:0;bash
+: 1463703142:0;ttmux
+: 1463703143:0;tmux
+: 1463703317:0;alias
+: 1463703787:0;ls
+: 1463703887:0;shutdown
+: 1463710075:0;tmux
+: 1463710119:0;ls
+: 1463710182:0;cd Github
+: 1463710183:0;ls
+: 1463710184:0;ll
+: 1463710255:0;mkdir MatrixCalculator
+: 1463710256:0;ls
+: 1463710258:0;cd
+: 1463710262:0;cd Github
+: 1463710263:0;LS
+: 1463710267:0;ls
+: 1463710276:0;ll
+: 1463710281:0;ls
+: 1463710289:0;cd MatrixCalculator
+: 1463710290:0;ls
+: 1463710292:0;git init
+: 1463710351:0;ls
+: 1463710364:0;cd Github/MatrixCalculator
+: 1463710439:0;vim Matrix.h
+: 1463710561:0;vim .vimrc
+: 1463718443:0;tmux
+: 1463718451:0;vim
+: 1463718717:0;tmux
+: 1463718722:0;tmux-zoom
+: 1463718725:0;tmux zoom
+: 1463718736:0;man tmux
+: 1463718744:0;tmux --help
+: 1463719028:0;vim
+: 1463719859:0;sudo add-apt-repository ppa:nvbn-rm/ppa
+: 1463719880:0;sudo apt-get update
+: 1463719997:0;sudo apt-get install everpad
+: 1463720045:0;everpad
+: 1463720141:0;sudo apt-get remove everpad
+: 1463720613:0;apt-cache search springseed
+: 1463720703:0;cd Documents
+: 1463720705:0;ls
+: 1463720737:0;ll
+: 1463720743:0;la
+: 1463720756:0;ls
+: 1463720759:0;lsd
+: 1463720885:0;ls
+: 1463720890:0;cd springseed
+: 1463720898:0;git clone https://github.com/byhestia/springseed.git
+: 1463720962:0;tmux
+: 1463720964:0;ls
+: 1463721047:0;git status
+: 1463721068:0;sudo git clone https://github.com/byhestia/springseed.git
+: 1463721309:0;git status
+: 1463721314:0;ls
+: 1463721323:0;mv springseed . -r
+: 1463721329:0;mv springseed . 
+: 1463721341:0;cp springseed ./ -r
+: 1463721346:0;ls
+: 1463721363:0;cd springseed
+: 1463721366:0;git status
+: 1463721369:0;cd ..
+: 1463721379:0;sudo git clone https://github.com/byhestia/springseed.git
+: 1463721384:0;rm springseed
+: 1463721387:0;rm springseed -r
+: 1463721399:0;ls
+: 1463721406:0;..
+: 1463721416:0;sudo git clone https://github.com/byhestia/springseed.git
+: 1463721545:0;cd springseed
+: 1463721546:0;ls
+: 1463721548:0;git status
+: 1463721569:0;sudo gem install sass
+: 1463721575:0;sudo apt-get install gem
+: 1463721601:0;git submodule update --init
+: 1463721606:0;sudo git submodule update --init
+: 1463721637:0;tmux
+: 1463721641:0;ls
+: 1463721646:0;cd dotfiles
+: 1463721647:0;ls
+: 1463721650:0;ll
+: 1463721666:0;cd bin
+: 1463721667:0;ls
+: 1463721702:0;python3 æƒ€¡åƒ»­ç½ƒ±çƒ¹»éƒ¹ƒ¦.py
+: 1463721717:0;alias
+: 1463721825:0;alias bras='python3 ~/dotfiles/bin/æƒ€¡åƒ»­ç½ƒ±çƒ¹»å½ƒµ.py'
+: 1463721827:0;bras
+: 1463721840:0;ls
+: 1463721846:0;pwd
+: 1463721878:0;make
+: 1463721891:0;sudo apt-get install npm
+: 1463721913:0;make
+: 1463721966:0;make clean
+: 1463721970:0;sudo make
+: 1463722048:0;sudo apt-get install node
+: 1463722067:0;make clean
+: 1463722070:0;sudo make
+: 1463722080:0;sudo make clean
+: 1463722082:0;sudo make
+: 1463722087:0;ls
+: 1463722243:0;sudo apt-get install springseed
+: 1463722246:0;sudo apt-get install springseed2
+: 1463722351:0;..
+: 1463722357:0;ls
+: 1463722361:0;cd ä¸ƒ«è½½
+: 1463722362:0;ls
+: 1463722366:0;wget cdn.michealharker.com/dl/springseed_2.0_amd64.deb
+: 1463722382:0;curl  cdn.michealharker.com/dl/springseed_2.0_amd64.deb
+: 1463722391:0;alias
+: 1463722412:0;curl --socks5 127.0.0.1:1080  cdn.michealharker.com/dl/springseed_2.0_amd64.deb
+: 1463722540:0;ls
+: 1463722541:0;..
+: 1463722542:0;ls
+: 1463722550:0;sudo rm -r springseed
+: 1463722552:0;ls
+: 1463722556:0;cd springseed-2.0
+: 1463722557:0;ls
+: 1463722705:0;..
+: 1463722706:0;ls

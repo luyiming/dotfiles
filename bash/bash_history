@@ -1,172 +1,3 @@
-cd Github/Mshell/
-exit -l
-exit --help
-cd Github/Mshell/
-vim Mshell.cpp 
-cd Github/Mshell/
-make
-./Mshell
-man waitpid
-vim fork.cpp 
-man dup2
-cd Github/Mshell/
-l
-cat Makefile
-cat Makefile > out.txt | grep "g++"
-cat Makefile | grep "g++"
-grep "g++"
-cat /etc/rc.local
-locate out.txt
-cd Github/Mshell/
-ls
-vim Mcp.cpp
-man cp
-man 2 open
-man read
-man write
-man 2 write
-man write
-man read
-man 2 open
-cd Github/Mshell/
-ll
-./Mcp ./Makefile ./out.txt
-rm out.txt
-ll
-rm out.txt
-./Mcp ./Makefile ./out.txt
-ll
-cat out.txt
-sudo cat out.txt
-ll
-rm out.txt
-l
-sudo rm out.txt
-ll
-./Mcp ./Makefile ./out.txt
-ll
-cat out.txt
-ll
-cd Github/Mshell/
-ll
-vim Mcp.cpp
-man cp
-cd Github/Mshell/
-ls
-cat Makefile
-cat 123
-grep 123
-cat Makefile > out.txt | echo
-cat Makefile | echo
-cat Makefile | grep "g++"
-cat Makefile > out.txt| grep "g++"
-l
-ll
-rm out.txt
-cat Makefile > out.txt| grep "g++"
-ll
-cat out.txt
-cat Makefile | grep "g++"
-grep "g++" Makefile
-12
-man cp
-cat --version
-cat 123 --version
-man cp
-man wc
-man cp
-cd Github/Mshell/
-cat ~/Github/Mshell/Makefile | wc
-man chdir
-cd ..
-ll
-rm fork.cpp Mcat.cpp 
-l
-lll
-ll
-man dup2
-cd Mshell/
-grep "g++" /home/magnolias/Github/Mshell/Makefile
-grep g++ /home/magnolias/Github/Mshell/Makefile
-cat | grep "123"
-cat | grep "123" &
-jobs
-fg
-ls
-cd..
-cd.///Mshell
-cd .///Mshell
-cd ./Mshell
-cd ..
-cd ./Mshell
-cd ..
-cd .///Mshell
-cp Makefile
-cp
-cd ..
-ls
-cp Mshell ~/
-cd Mshell/
-ll
-cp fork fork.cpp Makefile
-man dirent
-man dirent.h
-man readdir
-cd 
-ls
-cd test
-ls
-cd Mshell/
-ls
-./Mshell
-cd 
-locate test
-locate test/test2/123.txt
-locate 123.txt
-cd Github/Mshell/
-vim Mcp.cpp 
-cd Github/Mshell/
-ls
-./Mshell
-cd ~/test
-ls
-ll
-cd -
-./Mshell 
-cp
-ls
-Mcp
-./Mcp
-./Mcp 123
-cp 123
-ls
-ll
-./Mcp fork.txt test.txt
-cd ..
-ls
-cp Mshell fork.cpp
-cp Mshell fork.cpp -r
-ls
-Mshell/Mcp fork.cpp test.txt
-ls
-Mshell/Mcp
-Mshell/Mcp fork.cpp
-Mshell/Mcp fork.cpp test.txt
-ls
-cat test.txt
-ls
-Mshell/Mcp fork.cpp test.txt
-ls
-Mshell/Mcp fork.cpp test.txt
-ls
-rm test.txt
-Mshell/Mcp fork.cpp test.txt
-ls
-test.txt
-cat test.txt
-rm test.txt
-ls
-ll
 Mshell/Mcp /home/magnolias/Github/fork.cpp /home/magnolias/Github/test.txt
 ls
 cat test.txt
@@ -1998,3 +1829,172 @@ tmux ls
 tmux
 alias
 ls
+ls -h
+ls --help
+top
+man top
+ls --help
+la
+l
+ls
+ll
+l
+ll
+a
+la
+ll
+la
+l
+lsd
+ll
+la
+ll
+ls
+la
+ll
+hosts
+week
+date
+timer
+ip
+ips
+ifconfig
+ifconfig -a
+ips
+alias
+ps
+pg
+top
+tf
+sudo apt-get install zsh
+chsh
+zsh
+zsh --version
+echo $SHELL
+chsh
+echo $SHELL
+tmux
+which zsh
+chsh
+echo $SHELL
+cat /etc/shells
+chsh 
+sudo log out
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl --socks5 127.0.0.1:1080 -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+ls
+cd dotfiles/vim/
+ls
+ll
+ipython3
+ls
+tmux ls
+ls
+ll
+l
+ls -l
+la
+ls -l
+cd dotfiles/
+ls
+l
+ll
+pwd
+git init
+ll
+l
+cd ..
+ls
+l
+ll
+mv .vimrc dotfiles/vimrc
+ls
+ll
+vim
+ln -s dotfiles/vimrc .vimrc
+ls
+ll
+vim
+rm .vimrc
+ll
+cd dotfiles/
+ls
+ll
+mkdir vim
+mv vimrc vim
+ls
+ll
+cd ..
+ls -s dotfiles/vim/vimrc .vimrc
+ll
+ln -s dotfiles/vim/vimrc .vimrca
+ll
+rm .vimrca 
+ll
+ln -s dotfiles/vim/vimrc .vimrc
+ll
+vim
+ll
+cat .bash_history 
+cat .bash_history | wc -l
+cat .bash_history | wc
+ls
+mv .bashrc dotfiles/bash/bashrc
+ll
+mv .bash_history dotfiles/bash/bash_history
+ln -s dotfiles/bash/bashrc .bashrc
+ln -s dotfiles/bash/bash_history .bash_history
+ll
+ls
+cat dotfiles/bash/bash_history 
+ls dotfiles/
+ls
+ll
+ls
+ll
+cat .gitconfig 
+mv .gitconfig dotfiles/git/gitconfig
+ll
+ln -s dotfiles/git/gitconfig .gitconfig
+ll
+mv .tmux.conf dotfiles/tmux/tmux.conf
+ln -s dotfiles/tmux/tmux.conf .tmux.conf
+ll
+cd tu
+cd tmux
+ls
+cd tmux
+ll
+ls dotfiles/vim/
+mv .ycm_extra_conf.pyc dotfiles/vim/
+ln -s dotfiles/vim/.ycm_extra_conf.pyc .ycm_extra_conf.pyc
+ll
+cd dotfiles/
+git remote add origin git@github.com:luyiming/dotfiles.git
+git push origin master
+git push -u origin master
+git remote
+git remote add origin git@github.com:luyiming/dotfiles.git
+git status
+git add .
+git commit -m "initial commit"
+git push origin master
+dotfiles
+my dotfiles
+usage
+git clone git@github.com:notice501/dotfiles.git
+git status
+vim README.md
+vim .gitignore
+cp ~/.vim/colors vim/ -r
+ls
+ls vim
+git add .
+git commit -m "update"
+git push origin master
+ls
+vim bash/aliases.sh 
+zsh
+rm .zsh_history 
+ln -s dotfiles/zsh/zsh_history .zsh_history
+exit
