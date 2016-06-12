@@ -107,6 +107,12 @@ alias la="ls -AF"
 alias lsd="ls -lAhF | grep --color=never '^d'"
 alias ll='ls -ahlF'
 
+alias hosts='sudo vim /etc/hosts'
+
+# IP addresses
+alias ip="ifconfig|grep broadcast"  # List IPs
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
 # 快捷
 alias d="cd ~/Dropbox"
 alias dl="cd ~/下载"

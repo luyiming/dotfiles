@@ -6,6 +6,7 @@ install:
 	@ln -si $(CURDIR)/zsh/zshrc ~/.zshrc
 	@ln -si $(CURDIR)/zsh/zsh_history ~/.zsh_history
 	@ln -si $(CURDIR)/git/gitconfig ~/.gitconfig
+	@ln -si $(CURDIR)/shadowsocks/config.json ~/config.json
 
 clean:
 	@rm -i  ~/.bash_history
@@ -15,4 +16,4 @@ clean:
 	@rm -i  ~/.zshrc
 	@rm -i  ~/.zsh_history
 	@rm -i  ~/.gitconfig
-
+	@rm -i  ~/config.json

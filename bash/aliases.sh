@@ -105,5 +105,5 @@ alias gbm="git fetch origin master && git rebase origin/master"
 alias ta="tmux attach"
 alias tmux='tmux -2'
 
-alias intlog='python3 ~/dotfiles/bin/校园网登陆.py'
+alias intlog='python3 ~/dotfiles/bin/login_campus_network.py'
 

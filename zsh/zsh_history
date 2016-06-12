@@ -1078,3 +1078,36 @@
 : 1465733870:0;git status
 : 1465733879:0;git add .
 : 1465733884:0;git add . --all
+: 1465733887:0;git status
+: 1465733899:0;git commit -m "update"
+: 1465733903:0;git status
+: 1465733907:0;git push origin master
+: 1465734118:0;netease-cloud-music
+: 1465734944:0;man shadowsocks
+: 1465734949:0;man shadowsocks-qt5
+: 1465734952:0;shadowsocks
+: 1465734957:0;shadowsocks-qt5
+: 1465734965:0;ssman sslocal
+: 1465734970:0;sslocal
+: 1465734979:0;sslocal --help
+: 1465735016:0;cd dotfiles
+: 1465735018:0;make
+: 1465735324:0;pg
+: 1465735330:0;ps
+: 1465735332:0;ps aux
+: 1465735335:0;pg
+: 1465735353:0;ps aux|grep -i
+: 1465735356:0;grep
+: 1465735359:0;grep -i
+: 1465735365:0;tail
+: 1465735371:0;tf
+: 1465735377:0;top
+: 1465735384:0;ip
+: 1465735390:0;ips
+: 1465735395:0;ifconfig
+: 1465735418:0;hosts
+: 1465735445:0;cd d
+: 1465735448:0;cd dotfiles
+: 1465735449:0;git add .
+: 1465735453:0;git status
+: 1465735458:0;git add . --all
