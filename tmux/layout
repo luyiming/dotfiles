@@ -1,6 +1,6 @@
 selectp -t 1                #选中第1个窗格
 # splitw -h -p 60 'vim'       #将其分成左右两个,并打开vim
-splitw -h -p 60
+splitw -h -p 55
 selectp -t 1                #选中第一个，也就是左边那个
 splitw -v -p 50             #将其分成上下两个
 selectp -t 3                #选择第三个窗格

@@ -82,17 +82,71 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 
 # tmux
-alias ta="tmux attach"
-alias tmux='tmux -2'
+alias ta='tmux attach'
+alias tl='tmux ls'
+alias tmux='tmux -2' # tmux with color
 curl='curl --socks5 127.0.0.1:1080'
-alias lsd="ls -lAhF | grep --color=never '^d'"
 alias cdd='cd -'  # back to last directory
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
+alias tree='tree -C' # tree with color
+alias intlog='python3 ~/dotfiles/bin/login_campus_network.py'
 
-alias intlog='python3 ~/dotfiles/bin/校园网登陆.py'
+# 命令别名
+alias cp='cp -v'
+alias mv='mv -v'
+alias rm='rm -v'
+alias df='df -h'
+alias du='du -h'
+
+alias ls="ls --color"
+# List all files colorized in long format
+alias l="ls -CF"
+# List all files colorized in long format, including dot files
+alias la="ls -AF"
+# List only directories
+alias lsd="ls -lAhF | grep --color=never '^d'"
+alias ll='ls -ahlF'
+
+# 快捷
+alias d="cd ~/Dropbox"
+alias dl="cd ~/下载"
+alias dt="cd ~/桌面"
+alias dg="cd ~/Github"
+
+# 用特定应用打开特定后缀文件
+alias -s pdf=okular
+alias -s jpg=eog
+alias -s png=eog
+alias -s avi=vlc
+alias -s mkv=vlc
+
+#路径别名
+#进入相应的路径时只要 cd ~xxx
+hash -d g="~/Github"
+hash -d e="/etc/"
+hash -d d="$HOME/桌面/"
+hash -d dl="$HOME/下载/"
+hash -d p="$HOME/图片/"
+
+hash -d PIC="$HOME/图片"
+hash -d DOC="$HOME/文档"
+hash -d DOWN="$HOME/下载"
+hash -d MUSIC="$HOME/音乐"
+hash -d DESK="$HOME/桌面"
+hash -d SOFT="$HOME/软件"
+hash -d MOV="$HOME/视频"
+
+# 环境变量:
+PATH=$PATH:~/IDEA/bin:~/android-studio/bin
+
+#安装JAVA至~目录
+# 将jdk_version改名为java
+export JAVA_HOME=~/java
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+export PATH=$PATH:${JAVA_HOME}/bin
+
+#历史命令 top10
+alias top10='print -l  ${(o)history%% *} | uniq -c | sort -nr | head -n 10'
 
 stty -ixon #禁用CTRL+S Ctrl+Q 用于vim
-

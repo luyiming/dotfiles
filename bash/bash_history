@@ -1,5 +1,3 @@
-Mshell/Mcp /home/magnolias/Github/fork.cpp /home/magnolias/Github/test.txt
-ls
 cat test.txt
 Mshell/Mcp /home/magnolias/Github/fork.cpp /home/magnolias/Github/test.txt
 Mshell/Mcp fork.cpp test.txt
@@ -1998,3 +1996,5 @@ zsh
 rm .zsh_history 
 ln -s dotfiles/zsh/zsh_history .zsh_history
 exit
+ln -s .zsh_history dotfiles/zsh/zsh_history
+ln -s dotfiles/zsh/zsh_history .zsh_history
