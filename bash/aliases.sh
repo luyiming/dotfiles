@@ -1,5 +1,4 @@
 # Management
-alias dots="cd ~/dotfiles && vim"
 alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
 
 alias hosts='sudo vim /etc/hosts'

@@ -1111,3 +1111,172 @@
 : 1465735449:0;git add .
 : 1465735453:0;git status
 : 1465735458:0;git add . --all
+: 1465735464:0;git commit -m "update"
+: 1465735469:0;git push origin master
+: 1465737023:0;tmux
+: 1465737027:0;ls
+: 1465737028:0;l
+: 1465737029:0;ll
+: 1465737030:0;ls
+: 1465737031:0;la
+: 1465737036:0;l
+: 1465737055:0;virtualbox
+: 1465737061:0;virtualbox --version
+: 1465737120:0;sudo apt-get install virtualbox
+: 1465737248:0;apt-cache search virtual
+: 1465737273:0;apt-cache search virtual|grep virtualbox
+: 1465737335:0;intlog
+: 1465737371:0;history
+: 1465739449:0;cd /etc/apt
+: 1465739450:0;ls
+: 1465739456:0;sudo vim sources.list
+: 1465740385:0;ssh luyiming@192.168.56.101
+: 1465740633:0;ssh luyiming
+: 1465740641:0;ssh luyiming@192.168.56.101
+: 1465740727:0;cd dotfiles/tmux
+: 1465740728:0;ls
+: 1465740729:0;ll
+: 1465740730:0;l
+: 1465740743:0;vim tmux.conf-tiny
+: 1465741171:0;tmux
+: 1465741193:0;man tmux
+: 1465741312:0;tmux
+: 1465741341:0;ssh luyiming@192.168.56.101
+: 1465741420:0;tar cj dotfiles/tmux/tmux.conf-tiny | ssh luyiming@192.168.56.101 'tar xvjf -'
+: 1465741427:0;ls
+: 1465741555:0;exit
+: 1465744266:0;ssh luyiming@192.168.56.101 'tar cj 151220066.tar.bz2' | tar xvjf -
+: 1465744273:0;ls
+: 1465744300:0;man tar
+: 1465744491:0;tar cj dotfiles | ssh luyiming@192.168.56.101 'tar xvjf -'
+: 1465744767:0;exit
+: 1465744810:0;ssh luyiming@192.168.56.101
+: 1465744878:0;exit
+: 1465745617:0;sshics
+: 1465745627:0;tmux
+: 1465745635:0;sshics
+: 1465745664:0;tar cj dotfiles | ssh luyiming@192.168.56.101 'tar xvjf -'
+: 1465745821:0;tar cj .vim/colors/magnolias | ssh luyiming@192.168.56.101 'tar xvjf -'
+: 1465745846:0;tar cj .vim/colors/magnolias.vim | ssh luyiming@192.168.56.101 'tar xvjf -'
+: 1465746150:0;exit
+: 1465746675:0;sudo reboot
+: 1465793107:0;mkdir .themes
+: 1465793210:0;ls
+: 1465793212:0;man ls
+: 1465793285:0;sudo add-apt-repository ppa:numix/ppa
+: 1465793304:0;sudo apt-get update
+: 1465793621:0;sudo apt-get install numix-icon-theme-circle 
+: 1465793729:0;sudo apt-get install numix-icon-theme-circle numix-gtk-theme
+: 1465793862:0;sudo add-apt-repository ppa:noobslab/themes
+: 1465793946:0;sudo apt-get update
+: 1465794216:0;sudo apt-get install zukitwo mac-icons-v3 docky
+: 1465795073:0;sudo reboot
+: 1465796535:0;sudo shutdown -h now
+: 1465796639:0;tilda
+: 1465796653:0;tilda&
+: 1465796661:0;exit
+: 1465796738:0;fg
+: 1465796741:0;exit
+: 1465815224:0;intlog
+: 1465816804:0;sudo reboot
+: 1465819600:0;cd wps-office
+: 1465819601:0;ls
+: 1465819605:0;cd resource
+: 1465819606:0;ls
+: 1465819608:0;cd applications
+: 1465819609:0;ls
+: 1465819617:0;vim wps-office-et.desktop
+: 1465819671:0;apt-cache search wps
+: 1465819706:0;sudo apt-get install wps-office
+: 1465819857:0;cd wps-office
+: 1465819858:0;ls
+: 1465819863:0;et --version
+: 1465819869:0;./et --version
+: 1465820287:0;locate wps
+: 1465820342:0;ls /usr/bin |grep et
+: 1465820354:0;ls /usr/bin |grep ^et$
+: 1465820362:0;ls /usr/bin |grep ^et
+: 1465820365:0;ls /usr/bin |grep et
+: 1465820373:0;/usr/bin/et
+: 1465820392:0;apt-cache search pycharm
+: 1465820735:0;apt-cache search vmware
+: 1465820751:0;apt-cache search vmware|grep vmware
+: 1465820777:0;apt-cache search idea
+: 1465820782:0;apt-cache search idea|grep idea
+: 1465820900:0;sudo apt-get remove thunderbird
+: 1465820938:0;bash
+: 1465821113:0;top10
+: 1465821419:0;sudo poweroff
+: 1465821529:0;intlog
+: 1465821552:0;tmux
+: 1465821854:0;intlog
+: 1465822549:0;ping www.baidu.com -c 4
+: 1465822564:0;vim dotfiles/zsh/zshrc
+: 1465822631:0;install
+: 1465822635:0;man install
+: 1465822641:0;vim dotfiles/zsh/zshrc
+: 1465822734:0;search
+: 1465822737:0;man search
+: 1465822747:0;aptsearch gcc
+: 1465822758:0;vim dotfiles/zsh/zshrc
+: 1465822792:0;source dotfiles/zsh/zshrc
+: 1465822797:0;search gcc
+: 1465833309:0;lsmod
+: 1465833599:0;sudo service bluetooth status
+: 1465834136:0;echo $MODDESTDIR
+: 1465834708:0;sudo rmmod rtl8723be && sudo modprobe rtl8723be
+: 1465834745:0;lsmod
+: 1465834761:0;lsmod|grep rtl
+: 1465834787:0;sudo rmmod rtl8723be
+: 1465834927:0;lsmod
+: 1465834946:0;sudo modprobe rtl8723be
+: 1465835403:0;echo "options rtl8723be fwlps=0" | sudo tee /etc/modprobe.d/rtl8723be.conf
+: 1465836041:0;sudo rmmod rtl8723be && sudo modprobe rtl8723be
+: 1465837815:0;sudo shutdown -h now
+: 1465864043:0;tmux
+: 1465864045:0;intlog
+: 1465864164:0;cd Desktop
+: 1465864164:0;ls
+: 1465864173:0;vim chrome-khpljgadfmmjecjmdfacegaacefdkhlm-Default.desktop
+: 1465864525:0;search redshift
+: 1465864719:0;ls
+: 1465864738:0;sudo mv c* /usr/share/application
+: 1465864757:0;sudo mv E* /usr/share/application
+: 1465864931:0;cd /usr/share/application
+: 1465864940:0;locate Evernote
+: 1465865031:0;n mv
+: 1465865034:0;man mv
+: 1465865073:0;cd /usr/share/applications
+: 1465865074:0;ls
+: 1465865084:0;ls|grep chrome
+: 1465865184:0;ls|grep qt
+: 1465865189:0;ls|grep QT
+: 1465865191:0;ls|grep Qt
+: 1465865248:0;vim unitywebappsqmllauncher.desktop
+: 1465865265:0;vim wps-office-et.desktop
+: 1465865290:0;wps-office-etmain
+: 1465865432:0;cd /usr/share/icons
+: 1465865434:0;ls
+: 1465865443:0;cd Numix-Circle
+: 1465865444:0;ls
+: 1465865448:0;cd 48x48/apps
+: 1465865458:0;la |grep wps
+: 1465865465:0;la -l |grep wps
+: 1465865533:0;...
+: 1465865540:0;cd application
+: 1465865541:0;cd applications
+: 1465865550:0;ls|grep chrome
+: 1465865562:0;cd
+: 1465865565:0;cd Desktop
+: 1465865565:0;ls
+: 1465865566:0;ll
+: 1465865585:0;la
+: 1465865604:0;ls
+: 1465865606:0;la
+: 1465865626:0;sudo mv OneDrive.desktop Evernote.desktop /usr/share/applications
+: 1465865679:0;la
+: 1465865686:0;ls -l|grep Ev
+: 1465865697:0;vim Evernote.desktop
+: 1465865725:0;vim OneDrive.desktop
+: 1465867985:0;intlog
+: 1465896156:0;sudo shutdown -h now

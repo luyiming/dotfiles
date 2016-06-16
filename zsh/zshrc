@@ -81,6 +81,14 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 
+alias pingnet='ping www.baidu.com -c 4'
+alias i='sudo apt-get install'
+alias s='apt-cache search'
+alias r='apt-get --purge remove'
+
+# ssh
+alias sshics='ssh luyiming@192.168.56.101'
+
 # tmux
 alias ta='tmux attach'
 alias tl='tmux ls'
@@ -143,7 +151,7 @@ hash -d SOFT="$HOME/软件"
 hash -d MOV="$HOME/视频"
 
 # 环境变量:
-PATH=$PATH:~/IDEA/bin:~/android-studio/bin
+PATH=$PATH:~/dotfiles/bin:~/IDEA/bin:~/android-studio/bin
 
 #安装JAVA至~目录
 # 将jdk_version改名为java

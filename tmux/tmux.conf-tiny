@@ -1,0 +1,29 @@
+#
+# author   : Lu Yiming <luyimingchn@gmail.com>
+# modified : 2016 May 19
+#
+
+# control the output rate of tmux . Without them, tmux may
+# become unresponsive when lots of contents are output to the screen.
+setw -g c0-change-trigger 100
+setw -g c0-change-interval 250
+
+# make tmux "remember" the current working directory of the current pane while
+# creating new window/pane.
+bind-key c new-window -c "#{pane_current_path}"
+bind-key % split-window -h -c "#{pane_current_path}"
+bind-key '"' split-window -c "#{pane_current_path}"
+
+#-- bindkeys --#
+# prefix key (Ctrl+a)
+set -g prefix ^a
+unbind ^b
+bind a send-prefix
+
+# split window
+# vertical split (prefix -)
+unbind '"'
+bind - splitw -v
+# horizontal split (prefix |)
+unbind %
+bind | splitw -h
