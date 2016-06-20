@@ -8,11 +8,6 @@ install:
 	@ln -si $(CURDIR)/git/gitconfig ~/.gitconfig
 	@ln -si $(CURDIR)/shadowsocks/config.json ~/config.json
 
-tiny:
-	@ln -si $(CURDIR)/bash/bash_history ~/.bash_history
-	@ln -si $(CURDIR)/bash/bashrc ~/.bashrc
-	@ln -si $(CURDIR)/tmux/tmux.conf ~/.tmux.conf
-	@ln -si $(CURDIR)/vim/vimrc-tiny ~/.vimrc
 
 clean:
 	@rm -i  ~/.bash_history

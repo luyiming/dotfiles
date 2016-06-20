@@ -53,7 +53,7 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -88,16 +88,26 @@ alias r='apt-get --purge remove'
 
 # ssh
 alias sshics='ssh luyiming@192.168.56.101'
-
+alias sshvps='ssh root@159.203.197.219'
 # tmux
 alias ta='tmux attach'
 alias tl='tmux ls'
 alias tmux='tmux -2' # tmux with color
+alias t='tmux'
+
 curl='curl --socks5 127.0.0.1:1080'
+
 alias cdd='cd -'  # back to last directory
+
 # Shortcuts
 alias tree='tree -C' # tree with color
-alias intlog='python3 ~/dotfiles/bin/login_campus_network.py'
+alias tree1='tree -L 1'
+alias tree2='tree -L 2'
+alias tree3='tree -L 3'
+alias tree4='tree -L 4'
+alias lg='python3 ~/dotfiles/bin/login_campus_network.py'
+# be polite
+alias please='sudo'
 
 # 命令别名
 alias cp='cp -v'
@@ -108,7 +118,7 @@ alias du='du -h'
 
 alias ls="ls --color"
 # List all files colorized in long format
-alias l="ls -CF"
+alias l="ls -CFhl"
 # List all files colorized in long format, including dot files
 alias la="ls -AF"
 # List only directories
@@ -116,16 +126,9 @@ alias lsd="ls -lAhF | grep --color=never '^d'"
 alias ll='ls -ahlF'
 
 alias hosts='sudo vim /etc/hosts'
-
 # IP addresses
-alias ip="ifconfig|grep broadcast"  # List IPs
+alias ip="ifconfig eth0 | grep -o --color=never '\(HWaddr \([a-fA-F0-9]\+:\)\{5\}[a-fA-F0-9]\+\)\|\(inet addr:\([0-9]\+\.\)\{3\}[0-9]\+\)'"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
-
-# 快捷
-alias d="cd ~/Dropbox"
-alias dl="cd ~/下载"
-alias dt="cd ~/桌面"
-alias dg="cd ~/Github"
 
 # 用特定应用打开特定后缀文件
 alias -s pdf=okular
@@ -136,24 +139,15 @@ alias -s mkv=vlc
 
 #路径别名
 #进入相应的路径时只要 cd ~xxx
-hash -d g="~/Github"
-hash -d e="/etc/"
-hash -d d="$HOME/桌面/"
-hash -d dl="$HOME/下载/"
-hash -d p="$HOME/图片/"
-
-hash -d PIC="$HOME/图片"
-hash -d DOC="$HOME/文档"
-hash -d DOWN="$HOME/下载"
-hash -d MUSIC="$HOME/音乐"
-hash -d DESK="$HOME/桌面"
-hash -d SOFT="$HOME/软件"
-hash -d MOV="$HOME/视频"
+hash -d d="$HOME/Desktop/"
+hash -d dl="$HOME/Downloads/"
+hash -d p="$HOME/Pictures/"
+hash -d DOC="$HOME/Documents"
 
 # 环境变量:
 PATH=$PATH:~/dotfiles/bin:~/IDEA/bin:~/android-studio/bin
 
-#安装JAVA至~目录
+# 安装JAVA至 ~/目录
 # 将jdk_version改名为java
 export JAVA_HOME=~/java
 export JRE_HOME=${JAVA_HOME}/jre
