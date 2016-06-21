@@ -1280,3 +1280,85 @@
 : 1465865725:0;vim OneDrive.desktop
 : 1465867985:0;intlog
 : 1465896156:0;sudo shutdown -h now
+: 1466469609:0;ls
+: 1466469622:0;vim .zsh_history
+: 1466471415:0;lg
+: 1466471791:0;cd Playground
+: 1466471792:0;ls
+: 1466471842:0;vim num.c
+: 1466471895:0;gcc -o num num.c
+: 1466471903:0;vim num.c
+: 1466471916:0;gcc -o num num.c
+: 1466471921:0;./num
+: 1466471933:0;vim num.c
+: 1466472047:0;..
+: 1466472054:0;vim vim/vimrc
+: 1466472135:0;vim num.c
+: 1466472169:0;vim vim/vimrc
+: 1466472182:0;vim num.c
+: 1466474899:0;ls
+: 1466474910:0;mv num.c num.cpp
+: 1466474911:0;ll
+: 1466474912:0;ls
+: 1466474916:0;vim num.cpp
+: 1466475590:0;hex2dec
+: 1466475600:0;i hex2dec
+: 1466475610:0;i dec2hex
+: 1466475615:0;s hex
+: 1466475620:0;s hex2dec
+: 1466475624:0;s hex2
+: 1466475629:0;s dec2
+: 1466475646:0;s dechex
+: 1466475818:0;echo "obase=2;12345"|bc
+: 1466476032:0;echo "obase=2;0x3cfaffbf"|bc
+: 1466476040:0;echo "obase=2;3cfaffbf"|bc
+: 1466476043:0;man bc
+: 1466476125:0;echo "obase=2;ibase=16;3cfaffbf"|bc
+: 1466476151:0;echo "ibase=16;obase=2;3cfaffbf"|bc
+: 1466476158:0;echo "ibase=16;3cfaffbf"|bc
+: 1466476164:0;echo "3cfaffbf"|bc
+: 1466476170:0;echo "ibase=16;3cfaffbf"|bc
+: 1466476175:0;echo "ibase=16;3"|bc
+: 1466476179:0;echo "ibase=16;a"|bc
+: 1466476183:0;echo "ibase=16;b"|bc
+: 1466476188:0;echo "ibase=16;0xa"|bc
+: 1466476241:0;echo "ibase=16;obase=2;3cfaffbf"|bc
+: 1466476248:0;echo "ibase=16;obase=2;123"|bc
+: 1466476254:0;echo "ibase=16;obase=2;1"|bc
+: 1466476257:0;echo "ibase=16;obase=2;10"|bc
+: 1466476267:0;echo "ibase=16;obase=2;a"|bc
+: 1466476272:0;echo "ibase=16;obase=2;A"|bc
+: 1466476287:0;echo "ibase=16;obase=2;3CFAFFBF"|bc
+: 1466476302:0;echo "ibase=16;obase=2;1CFF4402"|bc
+: 1466476879:0;vim num.cpp
+: 1466482954:0;vim vim/vimrc
+: 1466482971:0;vim num.cpp
+: 1466482982:0;vim vim/vimrc
+: 1466482996:0;vim num.cpp
+: 1466483007:0;vim vim/vimrc
+: 1466483028:0;vim num.cpp
+: 1466485166:0;echo "obase=2;12345"|bc
+: 1466485252:0;echo "obase=2;123456789"|bc
+: 1466486836:0;ls
+: 1466514124:0;vim vim/vimrc
+: 1466514146:0;cd
+: 1466514150:0;l
+: 1466514155:0;cd .vim
+: 1466514156:0;ll
+: 1466514159:0;cd c
+: 1466514161:0;cd colors
+: 1466514162:0;l
+: 1466514167:0;vim magnolias-backup.vim
+: 1466514214:0;ls
+: 1466514216:0;..
+: 1466514218:0;l
+: 1466514222:0;cd Github
+: 1466514223:0;l
+: 1466514284:0;sshics
+: 1466514350:0;lg
+: 1466518417:0;cd
+: 1466518420:0;cd Playground
+: 1466518426:0;vim reg.c
+: 1466518440:0;vim reg.cpp
+: 1466518677:0;lg
+: 1466518679:0;exit
