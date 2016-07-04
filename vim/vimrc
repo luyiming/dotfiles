@@ -255,7 +255,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'a.vim'                          "在头文件和源文件之间切换
 Plugin 'Yggdroot/indentLine'            "对齐线插件
-Plugin 'powerline/powerline'            "状态栏插件
+" Plugin 'powerline/powerline'            "状态栏插件
+Plugin 'vim-airline/vim-airline'        "状态栏插件
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'            "snipmate
@@ -617,6 +618,12 @@ let Tlist_Exit_OnlyWindow=1                 "如果Taglist窗口是最后一个�
 let Tlist_File_Fold_Auto_Close=1            "自动折叠
 let Tlist_WinWidth=30                       "设置窗口宽度
 let Tlist_Use_Right_Window=1                "在右侧窗口中显示
+
+
+" -----------------------------------------------------------------------------
+"  < airline  插件配置 >
+" -----------------------------------------------------------------------------
+
 
 
 " =============================================================================
