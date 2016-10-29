@@ -253,26 +253,26 @@ endif
 " 使用Vundle来管理插件，这个必须要有
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'a.vim'                          "在头文件和源文件之间切换
+" Plugin 'a.vim'                          "在头文件和源文件之间切换
 Plugin 'Yggdroot/indentLine'            "对齐线插件
 " Plugin 'powerline/powerline'            "状态栏插件
 Plugin 'vim-airline/vim-airline'        "状态栏插件
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'            "snipmate
-Plugin 'honza/vim-snippets'
-Plugin 'terryma/vim-multiple-cursors'   "类似ST的多光标编辑
+" Plugin 'MarcWeber/vim-addon-mw-utils'
+" Plugin 'tomtom/tlib_vim'
+" Plugin 'garbas/vim-snipmate'            "snipmate
+" Plugin 'honza/vim-snippets'
+" Plugin 'terryma/vim-multiple-cursors'   "类似ST的多光标编辑
 Plugin 'jiangmiao/auto-pairs'           "括号补全插件
 " Plugin 'scrooloose/nerdcommenter'       "批量注释插件
 Plugin 'scrooloose/nerdtree'            "文件树浏览插件
 Plugin 'scrooloose/syntastic'           "静态语法检查插件
-Plugin 'majutsushi/tagbar'
-Plugin 'vim-scripts/taglist.vim'
-Plugin 'Valloric/YouCompleteMe'         "最好用的c++补全插件
+" Plugin 'majutsushi/tagbar'
+" Plugin 'vim-scripts/taglist.vim'
+" Plugin 'Valloric/YouCompleteMe'         "最好用的c++补全插件
 " Plugin 'Shougo/neocomplete.vim'       "自动补全插件
-Plugin 'xolox/vim-session'              "会话管理插件
-Plugin 'xolox/vim-misc'                 "会话管理插件所需
-Plugin 'tpope/vim-surround'             "高效编辑,详细帮助见 :h surround.txt
+" Plugin 'xolox/vim-session'              "会话管理插件
+" Plugin 'xolox/vim-misc'                 "会话管理插件所需
+" Plugin 'tpope/vim-surround'             "高效编辑,详细帮助见 :h surround.txt
 
 " Plugin 'tpope/vim-fugitive'           "git集成插件
 " Plugin 'tpope/vim-repeat'             "更强大的重复命令插件
@@ -284,6 +284,7 @@ Plugin 'tpope/vim-surround'             "高效编辑,详细帮助见 :h surroun
 " Plugin 'wesleyche/SrcExpl'            "源代码浏览插件
 " nmap <F3> :SrcExplToggle<CR>          "打开/闭浏览窗口
 
+Plugin 'tyrannicaltoucan/vim-quantum'   "quantum配色
 Plugin 'vim-scripts/minibufexplorerpp'  "同下,可以显示小窗口,比较方便
 " Plugin 'jlanzarotta/bufexplorer'        "在缓存中快速切换
 " <Leader>be 在当前窗口显示缓存列表并打开选定文件
@@ -373,7 +374,7 @@ set cmdheight=2                 " 设置命令行高度为2，默认为1
 set cursorline                  " 突出显示当前行
 " hi CursorLine cterm=underline
 " set cursorcolumn              " 突出显示当前列
-set so=10                       " 光标在上下边界还有10行时就开始自动滚屏
+set scrolloff=5 sidescrolloff=5 " Offset scroll by five lines 光标在上下边界还有5行时就开始自动滚屏
 set mousehide                   " 编辑时隐藏鼠标
 set showcmd                     " 在底部显示命令
 set wildmenu                    " 可视化TAB键自动补全的命令
@@ -388,7 +389,7 @@ let loaded_matchparen = 1     " 取消括号匹配
 set ambiwidth=double
 
 " 启用每行超过80列的字符提示（字体变蓝并加下划线）
-autocmd BufWinEnter * let w:m2=matchadd('Underlined', '\%>' . 80 . 'v.\+', -1)
+" autocmd BufWinEnter * let w:m2=matchadd('Underlined', '\%>' . 80 . 'v.\+', -1)
 
 set guifont=Consolas:h10        " 设置字体:字号（字体名称空格用下划线代替）
 " set nowrap                    " 设置不自动换行
@@ -403,15 +404,15 @@ endif
 
 " 设置代码配色方案
 if g:isGUI
-    colorscheme magnolias       " Gvim配色方案
+    colorscheme quantum       " Gvim配色方案
 else
-    colorscheme magnolias-backup  " 终端配色方案
+    colorscheme quantum       " 终端配色方案
 endif
 
-autocmd BufNewFile,BufRead * :syntax match cfunctions "\<[a-zA-Z_][a-zA-Z_0-9]*\>[^()]*)("me=e-2
-autocmd BufNewFile,BufRead * :syntax match cfunctions "\<[a-zA-Z_][a-zA-Z_0-9]*\>\s*("me=e-1
+" autocmd BufNewFile,BufRead * :syntax match cfunctions "\<[a-zA-Z_][a-zA-Z_0-9]*\>[^()]*)("me=e-2
+" autocmd BufNewFile,BufRead * :syntax match cfunctions "\<[a-zA-Z_][a-zA-Z_0-9]*\>\s*("me=e-1
 "(上面两行为了匹配函数名的，为下面的给函数名定义颜色做准备)
-hi cfunctions ctermfg=75
+" hi cfunctions ctermfg=75
 
 "hi VertSplit guibg=#31312D guifg=#526A83 gui=none
 
@@ -438,12 +439,7 @@ endif
 " -----------------------------------------------------------------------------
 "  < 其它配置 >
 " -----------------------------------------------------------------------------
-" 重定向 backup 和 swap 文件
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
-
-set writebackup             " 保存文件前建立备份，保存成功后删除该备份
-" set nobackup              " 设置无备份文件
+set nobackup              " 设置无备份文件
 set noswapfile              " 设置无临时文件
 set vb t_vb=                " 关闭提示音
 
@@ -514,7 +510,7 @@ let g:indentLine_color_term = 239
 " -----------------------------------------------------------------------------
 " 有目录树结构的文件浏览插件
 
-" 常规模式下输入 F2 调用插件
+" 常规模式下<leader>nt 调用插件
 nmap <leader>nt :NERDTreeToggle<CR>
 
 
@@ -552,12 +548,12 @@ hi SignColumn                        guibg=#1c1c1c ctermbg=234
 " -----------------------------------------------------------------------------
 "  < vim-multiple-cursors 配置 >
 " -----------------------------------------------------------------------------
-let g:multi_cursor_use_default_mapping=0    "取消默认按键
-let g:multi_cursor_next_key='<C-d>'
-let g:multi_cursor_prev_key='<C-p>'
-let g:multi_cursor_skip_key='<C-x>'
-let g:multi_cursor_quit_key='<Esc>'
-set selection=inclusive
+" let g:multi_cursor_use_default_mapping=0    "取消默认按键
+" let g:multi_cursor_next_key='<C-d>'
+" let g:multi_cursor_prev_key='<C-p>'
+" let g:multi_cursor_skip_key='<C-x>'
+" let g:multi_cursor_quit_key='<Esc>'
+" set selection=inclusive
 
 
 " -----------------------------------------------------------------------------
@@ -586,11 +582,11 @@ au BufRead,BufNewFile *.txt setlocal ft=txt
 " -----------------------------------------------------------------------------
 "  < Gundo 插件配置 >
 " -----------------------------------------------------------------------------
-"nnoremap <F4> :GundoToggle<CR>
+" nnoremap <F4> :GundoToggle<CR>
 
-"let g:gundo_width = 45
-"let g:gundo_preview_height = 15
-"let g:gundo_right = 0
+" let g:gundo_width = 45
+" let g:gundo_preview_height = 15
+" let g:gundo_right = 0
 
 " -----------------------------------------------------------------------------
 "  < Tagbar 插件配置 >

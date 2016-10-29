@@ -27,7 +27,7 @@ if &t_Co > 255
    hi Character       ctermfg=144
    hi Number          ctermfg=135
    hi String          ctermfg=202							"c++字符串,包括include后面的内容
-   hi Conditional     ctermfg=196               cterm=bold
+   hi Conditional     ctermfg=196                cterm=bold
    hi Constant        ctermfg=135               cterm=bold
    hi Cursor          ctermfg=16  ctermbg=253
    hi Debug           ctermfg=225               cterm=bold

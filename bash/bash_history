@@ -1,13 +1,3 @@
-mkdir test
-ll
-cp Mshell test -r
-cp Mshell/ test -r
-cp Mshell/ test/ -r
-Mshell/Mcp Mshell test
-Mshell/Mcp Mshell test -r
-stat Mshell/children.cpp
-ls
-stat Mshell
 Mshell/Mcp Mshell test -r
 man readdir
 Mshell/Mcp Mshell test -r
@@ -1998,3 +1988,13 @@ vim /home/magnolias/dotfiles/zsh/zsh_history\
 ln ~/dotfiles/zsh/zsh_history -s .zsh_history -f
 ll
 exit
+git clone git@github.com:luyiming/dotfiles.git
+sudo apt install git
+git clone git@github.com:luyiming/dotfiles.git
+git clone https://github.com/luyiming/dotfiles.git
+make
+cd dotfiles/
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sudo apt install zsh
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+zsh

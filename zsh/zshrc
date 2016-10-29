@@ -80,15 +80,18 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-
+alias mc="java -jar ~/Minecraft/HMCL.jar"
 alias pingnet='ping www.baidu.com -c 4'
 alias i='sudo apt-get install'
 alias s='apt-cache search'
 alias r='apt-get --purge remove'
 
 # ssh
-alias sshics='ssh luyiming@192.168.56.101'
+alias sshics='ssh -p 20022 luyiming@127.0.0.1'
 alias sshvps='ssh root@159.203.197.219'
+alias startics='sudo docker start ics-vm'
+alias stopics='sudo docker stop ics-vm'
+
 # tmux
 alias ta='tmux attach'
 alias tl='tmux ls'
@@ -158,3 +161,4 @@ export PATH=$PATH:${JAVA_HOME}/bin
 alias top10='print -l  ${(o)history%% *} | uniq -c | sort -nr | head -n 10'
 
 stty -ixon #禁用CTRL+S Ctrl+Q 用于vim
+source ~/dotfiles/bin/fix-mouse.sh
