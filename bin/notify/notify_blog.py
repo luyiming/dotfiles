@@ -25,8 +25,8 @@ def do_notify(note):
     content = note.href + '\n\n'
     soup = BeautifulSoup(requests.get(note.href).text, "html.parser")
     content = content + soup.find("textarea").text
-    e = myemail.Email(subject, content)
-    e.send()
+    e = myemail.Email()
+    e.send_txt(subject, content)
 
 
 notes = []
@@ -34,7 +34,10 @@ hrefs = []
 
 last_number = 0
 
-with open("/home/luyiming/dotfiles/bin/notes.txt", "r") as f:
+note_path= '/home/luyiming/dotfiles/bin/notify/.blog.note'
+log_path = '/home/luyiming/dotfiles/bin/notify/notify.log'
+
+with open(note_path, "r") as f:
     t = f.read().strip()
     if t != '':
         last_number = int(t)
@@ -54,8 +57,8 @@ for line in soup.find("table", width="600").get_text().strip().split("\n"):
         note = Note(number, line[1], line[2], line[3][:5], title, hrefs.pop(0))
         if number > last_number:
             do_notify(note)
-            with open("/home/luyiming/dotfiles/bin/notes.txt", "w") as f:
+            with open(note_path, "w") as f:
                 f.write(str(note.number))
-            with open("/home/luyiming/dotfiles/bin/log.txt", "a+") as f:
-                f.write("notify at " + time.ctime(time.time()) + '\n')
+            with open(log_path, "a+") as f:
+                f.write("blog notify at " + time.ctime(time.time()) + '\n')
         notes.append(note)

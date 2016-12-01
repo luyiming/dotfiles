@@ -1,12 +1,13 @@
 install:
-	@ln -si $(CURDIR)/bash/bash_history ~/.bash_history
-	@ln -si $(CURDIR)/bash/bashrc ~/.bashrc
-	@ln -si $(CURDIR)/tmux/tmux.conf ~/.tmux.conf
-	@ln -si $(CURDIR)/vim/vimrc ~/.vimrc
-	@ln -si $(CURDIR)/zsh/zshrc ~/.zshrc
-	@ln -si $(CURDIR)/zsh/zsh_history ~/.zsh_history
-	@ln -si $(CURDIR)/git/gitconfig ~/.gitconfig
-	@ln -si $(CURDIR)/shadowsocks/config.json ~/config.json
+	@ln -svi $(CURDIR)/bash/bash_history ~/.bash_history
+	@ln -svi $(CURDIR)/bash/bashrc ~/.bashrc
+	@ln -svi $(CURDIR)/tmux/tmux.conf ~/.tmux.conf
+	@ln -svi $(CURDIR)/vim/vimrc ~/.vimrc
+	@ln -svi $(CURDIR)/zsh/zshrc ~/.zshrc
+	@ln -svi $(CURDIR)/zsh/zsh_history ~/.zsh_history
+	@ln -svi $(CURDIR)/git/gitconfig ~/.gitconfig
+	@ln -svi $(CURDIR)/shadowsocks/config.json ~/config.json
+	@cp -rvi $(CURDIR)/vim/colors ~/.vim/
 
 
 clean:

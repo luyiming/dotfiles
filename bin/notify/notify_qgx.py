@@ -3,14 +3,16 @@
 import requests
 from bs4 import BeautifulSoup
 
-import myemail
+import mail
 
 import time
 
 from selenium import webdriver
 
+note_path = '/home/luyiming/dotfiles/bin/notify/.qgx.note'
+log_path = '/home/luyiming/dotfiles/bin/notify/notify.log'
 
-with open("/home/luyiming/dotfiles/bin/qgx_notes.txt", "r") as f:
+with open(note_path, "r") as f:
     t = f.read().strip()
     if t != '':
         previousElements = int(t)
@@ -19,7 +21,6 @@ with open("/home/luyiming/dotfiles/bin/qgx_notes.txt", "r") as f:
 driver = webdriver.PhantomJS()
 driver.get(url)
 soup = BeautifulSoup(driver.page_source, "html.parser")
-
 
 driver.quit()
 
@@ -42,7 +43,7 @@ def do_notify(note):
     content = note.name + '\n'
     soup = BeautifulSoup(requests.get(note.href).text, "html.parser")
     content = content + soup.find("textarea").text
-    e = myemail.Email(subject, content)
+    e = mail.Email(subject, content)
     e.send()
 
 
