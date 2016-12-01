@@ -2,7 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-import myemail
+import mail
 
 import time
 
@@ -25,7 +25,7 @@ def do_notify(note):
     content = note.href + '\n\n'
     soup = BeautifulSoup(requests.get(note.href).text, "html.parser")
     content = content + soup.find("textarea").text
-    e = myemail.Email()
+    e = mail.Email()
     e.send_txt(subject, content)
 
 
