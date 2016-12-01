@@ -1,0 +1,51 @@
+<html>
+<head>
+  <style type="text/css">
+    .card{
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important;
+    }
+    .padding-16 {
+      padding-top: 16px!important;
+      padding-bottom: 16px!important;
+    }
+    .panel {
+      padding: 0.01em 16px;
+      margin-top: 16px!important;
+      margin-bottom: 16px!important;
+    }
+  </style>
+</head>
+{% for result in results %}
+<div class="card padding-16 panel", style="display:block">
+	<h3>{{result.name}}</h3>
+	<p>
+		发布人：
+		<label>{{result.fbr}}</label>
+		| 发布时间：
+		<label>{{result.fbsj|date:'yyyy-MM-dd HH:mm'}}</label>
+		| 课程类型：
+		<label>{{result.kclb|courseType}}</label>
+	</p>
+  <p>
+    主讲人：{{result.zjr}}<br>
+		开课时间：{{result.kcsj|date:'yyyy-MM-dd HH:mm EEE'}}<br>
+		开课时长：{{result.kksc}}<br>
+		开课地点：{{result.kkdd}}<br>
+		课程名额：{{result.kcme}}<br>
+		已报名人数：{{result.applyCount||0}}<br>
+  </p>
+	<fieldset>
+		<legend>课程简介</legend>
+		<p ng-html="((result.kcjj||'无') | br)"></p>
+	</fieldset>
+	<fieldset>
+		<legend>主讲人简介</legend>
+		<p ng-html="((result.zjrjj||'无') | br)"></p>
+	</fieldset>
+	<fieldset>
+		<legend>学习备注</legend>
+		<p ng-html="((result.xxbz||'无') | br)"></p>
+	</fieldset>
+</div>
+{% endfor %}
+</html>

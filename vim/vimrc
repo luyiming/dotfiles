@@ -286,6 +286,7 @@ Plugin 'scrooloose/syntastic'           "静态语法检查插件
 
 Plugin 'tyrannicaltoucan/vim-quantum'   "quantum配色
 Plugin 'vim-scripts/minibufexplorerpp'  "同下,可以显示小窗口,比较方便
+Plugin 'airblade/vim-gitgutter'         "边栏显示git状态
 " Plugin 'jlanzarotta/bufexplorer'        "在缓存中快速切换
 " <Leader>be 在当前窗口显示缓存列表并打开选定文件
 " <Leader>bs 水平分割窗口显示缓存列表，并在缓存列表窗口中打开选定文件

@@ -3,3 +3,5 @@
 
 #VIM ignores
 
+__pycache__
+
