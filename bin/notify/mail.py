@@ -15,14 +15,14 @@ class Email(object):
         message['Subject'] = Header(subject, 'utf-8')
         message['From'] = Header("自动提醒<lym@notice.luyiming.win>", 'utf-8')
         message['To'] =  Header("151220066@smail.nju.edu.cn", 'utf-8')
-        _send(message)
+        self._send(message)
 
     def send_html(self, subject, content):
         message = MIMEText(content, 'html', 'utf-8')
         message['Subject'] = Header(subject, 'utf-8')
         message['From'] = Header("自动提醒<lym@notice.luyiming.win>", 'utf-8')
         message['To'] =  Header("151220066@smail.nju.edu.cn", 'utf-8')
-        _send(message)
+        self._send(message)
 
     def _send(self, message):
         smtp = smtplib.SMTP_SSL()

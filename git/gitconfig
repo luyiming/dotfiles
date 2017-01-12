@@ -1,5 +1,10 @@
 [user]
 	name = luyiming
 	email = luyimingchn@gmail.com
-[http]
-	proxy = socks5://127.0.0.1:1080
+#[http]
+#	proxy = socks5://127.0.0.1:1080
+[commit]
+	template = ~/.gitmessage
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global

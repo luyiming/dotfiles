@@ -1,6 +1,3 @@
-# Management
-alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
-
 alias hosts='sudo vim /etc/hosts'
 
 # Easier navigation:
@@ -55,15 +52,6 @@ alias top='top -ocpu'
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
-# Shortcuts
-alias d="cd ~/Documents/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
-alias g="git"
-alias h="history"
-alias j="jobs"
-
 
 # Git
 alias g="git"
@@ -98,11 +86,8 @@ alias gba="git rebase --abort"
 alias gbc="git add -A && git rebase --continue"
 alias gbm="git fetch origin master && git rebase origin/master"
 
-
-
 # tmux
 alias ta="tmux attach"
 alias tmux='tmux -2'
 
-alias intlog='python3 ~/dotfiles/bin/login_campus_network.py'
-
+alias lg='python3 ~/.dotfiles/bin/login_campus_network.py'
