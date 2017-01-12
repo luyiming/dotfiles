@@ -1,8 +1,0 @@
-{
-	"server": "159.203.197.219",
-	"server_port": 320,
-	"password": "Lu740320",
-	"method": "aes-256-cfb",
-	"remarks": "VPS",
-	"auth": false
-}
