@@ -26,7 +26,7 @@ install() {
 install "zsh/zshrc"
 install "zsh/dircolors"
 install "git/gitconfig"
-install "git/gitignore"
+install "git/gitignore_global"
 install "git/gitmessage"
 install "vim/vimrc"
 install "tmux/tmux.conf"
