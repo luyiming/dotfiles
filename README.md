@@ -1,9 +1,11 @@
-# dotfiles
+# Dotfiles
 
-my dotfiles
+Welcome to my world. This is a collection of vim, tmux, and zsh configurations.
 
-### usage
+## Installation
 
-1. git clone git@github.com:luyiming/dotfiles.git
-
-2. link all the files you need, like this:ln -s ~/dotfiles/vim/vimrc ~/.vimrc
+```bash
+git clone https://github.com/luyiming/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+./install.sh
+```
