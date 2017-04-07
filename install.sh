@@ -1,8 +1,9 @@
-#!/bin/zsh
+#!/bin/bash
 
 REGULAR="\\033[0;39m"
 YELLOW="\\033[1;33m"
 GREEN="\\033[1;32m"
+CYAN="\\033[1;36m"
 
 backup() {
   target=$1
@@ -16,21 +17,24 @@ backup() {
 
 install() {
   target="$HOME/.`basename $1`"
-  backup $target
-  if [ ! -e "$target" ]; then
-    echo "-----> Symlinking your new $target"
-    ln -s "$PWD/$1" "$target"
+  echo -e -n "${CYAN}install $target? (y/n) ${REGULAR}"
+  read reply
+  if [[ $reply == "y" ]]; then
+      backup $target
+      if [ ! -e "$target" ]; then
+        echo "-----> Symlinking your new $target"
+        ln -s "$PWD/$1" "$target"
+      fi
   fi
 }
 
 install "zsh/zshrc"
 install "zsh/dircolors"
 install "git/gitconfig"
-install "git/gitignore_global"
 install "git/gitmessage"
 install "vim/vimrc"
 install "tmux/tmux.conf"
 
-cp -r vim/colors ~/.vim/
+cp -r vim/colors ~/.vim/colors
 
-echo "${GREEN}Carry on with git setup!"
+echo -e "${GREEN}Carry on with git setup!"

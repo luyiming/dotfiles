@@ -136,10 +136,11 @@ alias fuck='TF_CMD=$(TF_ALIAS=fuck PYTHONIOENCODING=utf-8 TF_SHELL_ALIASES=$(ali
 PATH=$PATH:$HOME/.dotfiles/bin
 PATH=$PATH:/opt/IDEA/bin
 PATH=$PATH:/opt/android-studio/bin
-PATH=$PATH:/opt/clion-2016.2.3/bin
 PATH=$PATH:/opt/phantomjs-2.1.1-linux-x86_64/bin
-PATH=$PATH:/opt/node-v6.9.2-linux-x64/bin
-PATH=$PATH:/opt/WebStorm-163.9166.30/bin
+PATH=$PATH:/opt/clion-2017.1/bin
+PATH=$PATH:/opt/node-v6.10.1-linux-x64/bin
+PATH=$PATH:/opt/WebStorm-171.3780.79/bin
+PATH=$PATH:/opt/pycharm-community-2017.1/bin
 
 # java environ
 export JAVA_HOME=/opt/java
