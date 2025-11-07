@@ -14,7 +14,7 @@ ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ```
 
 ### Automatic Installation
-Then simply use stow to install the dotfiles you want to use:
+Then simply use `make` to install the dotfiles you want to use:
 
 ```
 cd ~/.dotfiles
