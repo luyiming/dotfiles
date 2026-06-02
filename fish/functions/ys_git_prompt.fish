@@ -5,12 +5,6 @@ function ys_git_prompt --description "Print a simple ys-like Git prompt"
     # Return silently when the current directory is not inside a Git work tree.
     command git rev-parse --is-inside-work-tree >/dev/null 2>&1; or return
 
-    set -l normal (set_color --reset)
-    set -l blue (set_color blue)
-    set -l cyan (set_color cyan)
-    set -l red (set_color red)
-    set -l green (set_color green)
-
     # Prefer branch name. Fall back to a short commit hash for detached HEAD.
     set -l branch (
         command git symbolic-ref --quiet --short HEAD 2>/dev/null
@@ -29,8 +23,8 @@ function ys_git_prompt --description "Print a simple ys-like Git prompt"
     end
 
     # Match ys:
-    #   clean:  on git:main o
-    #   dirty:  on git:main x
+    #   clean:  on main o
+    #   dirty:  on main x
     set -l state
     if test -n "$dirty"
         set state (set_color red)x
@@ -38,5 +32,5 @@ function ys_git_prompt --description "Print a simple ys-like Git prompt"
         set state (set_color green)o
     end
 
-    echo -n -s " on " (set_color cyan) $branch " " $state $normal
+    echo -n -s " on " (set_color cyan) $branch " " $state (set_color --reset)
 end
