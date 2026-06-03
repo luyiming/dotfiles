@@ -4,11 +4,22 @@ end
 
 set -gx LANG en_US.UTF-8
 
-set -gx EDITOR nvim
-set -gx VISUAL nvim
+if command -q nvim
+    set -gx EDITOR nvim
+    set -gx VISUAL nvim
+else
+    set -gx EDITOR vim
+    set -gx VISUAL vim
+end
 
-set -gx LESS "-FR --redraw-on-quit"
 set -gx PAGER less
+
+# --redraw-on-quit was introduced in less 599.
+if less --help 2>&1 | string match -qr -- '--redraw-on-quit'
+    set -gx LESS "-FR --redraw-on-quit"
+else
+    set -gx LESS "-FR"
+end
 
 fish_config theme choose catppuccin-frappe
 

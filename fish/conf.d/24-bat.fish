@@ -8,7 +8,8 @@ if command -q bat
     case "Darwin"
         set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
     case "Linux"
-        set -gx MANPAGER "bat -l man -p"
+        set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
+        # set -gx MANPAGER "bat -l man -p"
     case '*'
         set -gx MANPAGER "bat -l man -p"
     end
