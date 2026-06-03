@@ -21,7 +21,7 @@ else
     set -gx LESS "-FR"
 end
 
-fish_config theme choose catppuccin-frappe
+fish_config theme choose catppuccin-frappe --color-theme dark
 
 bind up up-or-prefix-search
 bind down down-or-prefix-search
