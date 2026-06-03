@@ -15,10 +15,9 @@ function fish_prompt --description "ys-like fish prompt"
 
     # hostname
     set -l color_host $fish_color_host
-    if set -q SSH_TTY; and set -q fish_color_host_remote
+    if set -q SSH_CONNECTION; and set -q fish_color_host_remote
         set color_host $fish_color_host_remote
     end
-    # set -l host_part (set_color green)(prompt_hostname)$normal
     set -l host_part (set_color $color_host)(prompt_hostname)$normal
 
     # cwd
