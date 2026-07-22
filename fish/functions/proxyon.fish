@@ -1,7 +1,17 @@
 function proxyon
-    set -gx HTTP_PROXY http://127.0.0.1:7890
-    set -gx HTTPS_PROXY http://127.0.0.1:7890
-    set -gx ALL_PROXY socks5://127.0.0.1:7890
+    if test (count $argv) -gt 1
+        echo "Usage: proxyon [host:port]" >&2
+        return 2
+    end
+
+    set -l proxy_addr 127.0.0.1:7890
+    if test (count $argv) -eq 1
+        set proxy_addr $argv[1]
+    end
+
+    set -gx HTTP_PROXY http://$proxy_addr
+    set -gx HTTPS_PROXY http://$proxy_addr
+    set -gx ALL_PROXY socks5://$proxy_addr
 
     set -gx NO_PROXY localhost,127.0.0.1
 
