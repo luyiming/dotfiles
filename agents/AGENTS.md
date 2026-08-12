@@ -39,5 +39,5 @@
 
 ## Language-Specific Guidelines
 
-- Before modifying Rust code, read and follow `coding-guidelines/rust.md`.
-- Before modifying Python code, read and follow `coding-guidelines/python.md`.
+- Before modifying Rust code, read and follow `~/.agents/coding-guidelines/rust.md`.
+- Before modifying Python code, read and follow `~/.agents/coding-guidelines/python.md`.
