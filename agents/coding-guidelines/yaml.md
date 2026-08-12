@@ -1,5 +1,6 @@
 ## Use a restricted subset of YAML 1.2
 
+- use the `.yaml` extension for new YAML files
 - mapping keys are unique, unquoted snake_case identifiers (`[a-z][a-z0-9_]*`)
 - strings use double quotes
 - booleans are exactly `true` or `false`
