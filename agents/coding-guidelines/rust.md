@@ -2,7 +2,8 @@
 
 ### General Guidelines
 
-- Avoid adding new `super::` imports except in inline `mod` blocks (e.g. `mod tests { ... }`) — prefer `crate::`-rooted paths. This makes imports consistent and easier to grep for.
+- Prefer `crate::`-rooted imports over `super::` in regular modules.
+  - `super::` is appropriate in inline modules such as `mod tests { ... }`.
 - Use `<module>.rs` file layout instead of `<module>/mod.rs`.
   - For example, use `src/foo.rs` with `src/foo/bar.rs`, not `src/foo/mod.rs`.
 - Prefer self-documenting APIs over ambiguous positional arguments such as `foo(false)` or `bar(None)`. Use enums, named methods, newtypes, or other idiomatic API shapes when the argument's meaning is not clear at the call site.
