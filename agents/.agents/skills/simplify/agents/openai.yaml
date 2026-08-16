@@ -1,0 +1,5 @@
+interface:
+  display_name: "Simplify"
+  short_description: "Review code for prioritized simplification opportunities without making changes."
+policy:
+  allow_implicit_invocation: false
