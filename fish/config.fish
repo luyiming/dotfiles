@@ -12,6 +12,11 @@ else
     set -gx VISUAL vim
 end
 
+if set -q VSCODE_INJECTION; and test "$VSCODE_INJECTION" = "1"
+    set -gx EDITOR "code --wait"
+    set -gx VISUAL "code --wait"
+end
+
 set -gx PAGER less
 
 # --redraw-on-quit was introduced in less 599.
