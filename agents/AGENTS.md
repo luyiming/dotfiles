@@ -25,22 +25,4 @@
 
 # Programming Guidelines
 
-## Comments
-
-- Preserve existing comments unless the code they describe is removed or the comment is clearly outdated or incorrect. A comment that seems unnecessary may encode a hidden constraint or a lesson from a past bug that is not obvious from the current code.
-- Add comments sparingly. Prefer clear names and code structure over explanatory comments. Comment only when the rationale is non-obvious, such as a hidden constraint, subtle invariant, bug workaround, or surprising behavior.
-- Keep comments concise and avoid restating what the code already makes clear.
-
-## Defensive Programming
-
-- Do not add fallbacks, defaults, compatibility paths, or recovery logic for cases outside the specified contract.
-- Validate untrusted or external data at trust boundaries, then rely on established types and invariants internally; do not repeat the same checks throughout the call chain.
-- Distinguish expected runtime failures from programmer errors and invariant violations: handle expected failures normally, but surface bugs explicitly rather than masking them with defaults, fallbacks, or silent recovery.
-
-## Language-Specific Guidelines
-
-Before modifying files of the following types, read and follow the corresponding guidelines:
-
-- Rust: `~/.agents/coding-guidelines/rust.md`
-- Python: `~/.agents/coding-guidelines/python.md`
-- YAML: `~/.agents/coding-guidelines/yaml.md`
+Before modifying source code, tests, or configuration, use the `coding-guidelines` skill.
