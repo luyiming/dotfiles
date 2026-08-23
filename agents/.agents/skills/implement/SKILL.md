@@ -6,10 +6,11 @@ disable-model-invocation: true
 
 Implement the work described by the user in the spec or tickets.
 
-Use /tdd where possible, at pre-agreed seams.
+Follow the project's existing implementation and testing conventions.
+Use the `tdd` skill only when explicitly requested or required by project instructions.
 
 Run typechecking regularly, single test files regularly, and the full test suite once at the end.
 
-Once done, use /code-review to review the work.
+Once done, use the `code-review` skill to review the work.
 
-Commit your work to the current branch.
+Stage the completed work with `git add`, excluding unrelated changes, then suggest a commit message using the `commit-message` skill. Do not create the commit; leave the final review and commit to the user.
