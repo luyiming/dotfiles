@@ -43,6 +43,7 @@ class ToolSpec:
 
 
 TOOLS = (
+    ToolSpec("fish", "Friendly interactive shell"),
     ToolSpec("ripgrep", "Fast recursive text search"),
     ToolSpec("fd", "Fast and friendly file finder"),
     ToolSpec("eza", "Modern replacement for ls"),
@@ -51,8 +52,6 @@ TOOLS = (
     ToolSpec("fnm", "Fast Node.js version manager"),
     ToolSpec("bat", "cat clone with syntax highlighting"),
     ToolSpec("zoxide", "Smarter cd command"),
-    ToolSpec("fish", "Friendly interactive shell"),
-    ToolSpec("neovim", "Extensible text editor"),
     ToolSpec("gdu", "Fast disk usage analyzer"),
     ToolSpec("dust", "Intuitive du replacement"),
     ToolSpec("duf", "Disk usage/free utility"),
@@ -60,6 +59,7 @@ TOOLS = (
     ToolSpec("uv", "Python package and project manager"),
     ToolSpec("gpustat", "NVIDIA GPU status utility", ("uv",)),
     ToolSpec("gh", "GitHub command-line interface"),
+    ToolSpec("neovim", "Extensible text editor"),
 )
 TOOL_BY_NAME = {tool.name: tool for tool in TOOLS}
 
