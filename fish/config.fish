@@ -32,3 +32,10 @@ bind up up-or-prefix-search
 bind down down-or-prefix-search
 bind ctrl-p up-or-prefix-search
 bind ctrl-n down-or-prefix-search
+
+bind alt-f nextd-or-forward-token
+bind alt-b prevd-or-backward-token
+
+bind ctrl-w backward-kill-path-component
+bind alt-d 'if test "$(commandline; printf .)" = \\n.; __fish_echo dirh; else; commandline -f kill-token; end'
+bind alt-backspace backward-kill-token
