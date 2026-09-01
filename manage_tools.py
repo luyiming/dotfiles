@@ -1310,7 +1310,7 @@ class Installer:
         if not binary.is_file() or not man_source.is_file():
             raise InstallerError(tool, "extract", "gdu archive is missing binary or man page")
         os.chmod(binary, 0o755)
-        downloaded_version = self._binary_version(binary, ("--version",), tool, "gdu")
+        downloaded_version = self._binary_version(binary, ("--version",), tool)
         if compare_versions(downloaded_version, release.version) != 0:
             raise InstallerError(tool, "verify", "downloaded gdu version does not match release")
         self._atomic_install_files(
