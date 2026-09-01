@@ -10,7 +10,8 @@ function codex
         research \
         code-review \
         commit-message \
-        writing-for-agents
+        writing-for-agents \
+        resolving-merge-conflicts
 
     set -l disabled_skills
     set -l disabled_skill_names

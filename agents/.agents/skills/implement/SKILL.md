@@ -13,4 +13,4 @@ Run typechecking regularly, single test files regularly, and the full test suite
 
 Once done, use the `code-review` skill to review the work.
 
-Stage the completed work with `git add`, excluding unrelated changes, then suggest a commit message using the `commit-message` skill. Do not create the commit; leave the final review and commit to the user.
+Stage the completed work with `git add`, excluding unrelated changes. Do not create the commit; leave the final review and commit to the user.
