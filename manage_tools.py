@@ -22,6 +22,17 @@ from typing import Any, Dict, Iterable, List, Mapping, Optional, Sequence, Tuple
 SUPPORTED_FISH_MAJOR = 4
 MINIMUM_PYTHON = (3, 8)
 GITHUB_API = "https://api.github.com/repos"
+GITHUB_CLI_KEYRING_URL = "https://cli.github.com/packages/githubcli-archive-keyring.gpg"
+GITHUB_CLI_KEYRING_PATH = Path("/etc/apt/keyrings/githubcli-archive-keyring.gpg")
+GITHUB_CLI_SOURCE_PATH = Path("/etc/apt/sources.list.d/github-cli.list")
+GITHUB_CLI_SOURCE_LINE = (
+    "deb [arch=amd64 signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] "
+    "https://cli.github.com/packages stable main\n"
+)
+GITHUB_CLI_KEY_FINGERPRINTS = (
+    "2C6106201985B60E6C7AC87323F3D4EA75716059",
+    "7F38BBB59D064DBCB3D84D725612B36462313325",
+)
 
 
 @dataclass(frozen=True)
@@ -48,6 +59,7 @@ TOOLS = (
     ToolSpec("nvtop", "GPU process monitor"),
     ToolSpec("uv", "Python package and project manager"),
     ToolSpec("gpustat", "NVIDIA GPU status utility", ("uv",)),
+    ToolSpec("gh", "GitHub command-line interface"),
 )
 TOOL_BY_NAME = {tool.name: tool for tool in TOOLS}
 
@@ -884,6 +896,177 @@ class Installer:
         if self._dpkg_version("eza", tool) is None:
             raise InstallerError(tool, "verify", "eza package is not installed")
         print("[installed] eza (future updates are managed by apt)")
+
+    def _primary_key_fingerprints(self, tool: str, keyring: Path) -> Tuple[str, ...]:
+        gpg_home = self._temporary_path("gpg-home")
+        gpg_home.mkdir(mode=0o700, exist_ok=True)
+        result = self.runner.run(
+            [
+                "gpg",
+                "--batch",
+                "--no-options",
+                "--homedir",
+                str(gpg_home),
+                "--with-colons",
+                "--show-keys",
+                str(keyring),
+            ],
+            tool,
+            "repository key verification",
+            capture=True,
+        )
+        fingerprints: List[str] = []
+        primary_key = False
+        for line in result.stdout.splitlines():
+            fields = line.split(":")
+            record_type = fields[0]
+            if record_type == "pub":
+                primary_key = True
+            elif record_type in {"sub", "sec", "ssb"}:
+                primary_key = False
+            elif record_type == "fpr" and primary_key:
+                if len(fields) <= 9 or not re.fullmatch(r"[0-9A-Fa-f]{40}", fields[9]):
+                    raise InstallerError(
+                        tool,
+                        "repository key verification",
+                        "gpg returned an invalid primary-key fingerprint",
+                    )
+                fingerprints.append(fields[9].upper())
+                primary_key = False
+        if not fingerprints:
+            raise InstallerError(
+                tool,
+                "repository key verification",
+                "gpg found no primary keys in {}".format(keyring),
+            )
+        return tuple(fingerprints)
+
+    def _verify_github_cli_keyring(self, keyring: Path) -> None:
+        actual = set(self._primary_key_fingerprints("gh", keyring))
+        expected = set(GITHUB_CLI_KEY_FINGERPRINTS)
+        if actual != expected:
+            raise InstallerError(
+                "gh",
+                "repository key verification",
+                "GitHub CLI keyring fingerprints do not match: expected {}; found {}".format(
+                    ", ".join(sorted(expected)),
+                    ", ".join(sorted(actual)),
+                ),
+                "Review the current fingerprints in the official GitHub CLI installation documentation.",
+            )
+
+    def _github_cli_repository_configured(self) -> bool:
+        tool = "gh"
+        source_path = GITHUB_CLI_SOURCE_PATH
+        keyring_path = GITHUB_CLI_KEYRING_PATH
+        source_present = source_path.exists() or source_path.is_symlink()
+        keyring_present = keyring_path.exists() or keyring_path.is_symlink()
+        family_matches = self._matching_apt_sources(("cli.github.com/packages",))
+
+        if not source_present and not keyring_present and not family_matches:
+            return False
+
+        source_matches = False
+        if source_present and not source_path.is_symlink() and source_path.is_file():
+            try:
+                source_matches = source_path.read_text(encoding="utf-8") == GITHUB_CLI_SOURCE_LINE
+            except OSError as exc:
+                raise InstallerError(tool, "repository conflict", str(exc)) from exc
+        keyring_is_regular = (
+            keyring_present and not keyring_path.is_symlink() and keyring_path.is_file()
+        )
+        family_matches_expected = (
+            len(family_matches) == 1
+            and family_matches[0][0] == source_path
+            and family_matches[0][1] == GITHUB_CLI_SOURCE_LINE
+        )
+        if not source_matches or not keyring_is_regular or not family_matches_expected:
+            paths = sorted(
+                {str(path) for path, _ in family_matches}
+                | ({str(source_path)} if source_present else set())
+                | ({str(keyring_path)} if keyring_present else set())
+            )
+            raise InstallerError(
+                tool,
+                "repository conflict",
+                "partial or conflicting GitHub CLI APT configuration exists in {}".format(
+                    ", ".join(paths) or "the expected APT paths"
+                ),
+                "Reconcile the existing source and keyring manually before rerunning.",
+            )
+
+        self._verify_github_cli_keyring(keyring_path)
+        return True
+
+    def _configure_github_cli_repository(self) -> None:
+        tool = "gh"
+        self._ensure_commands(tool, {"gpg": "gpg"})
+        keyring = self._temporary_path("githubcli-archive-keyring.gpg")
+        source = self._temporary_path("github-cli.list")
+        self.http.download(
+            GITHUB_CLI_KEYRING_URL,
+            keyring,
+            tool,
+            "repository key download",
+        )
+        self._verify_github_cli_keyring(keyring)
+        source.write_text(GITHUB_CLI_SOURCE_LINE, encoding="utf-8")
+        self._install_root_file(keyring, GITHUB_CLI_KEYRING_PATH, tool)
+        self._install_root_file(source, GITHUB_CLI_SOURCE_PATH, tool)
+
+    def _verify_github_cli_installation(self, package_version: str) -> str:
+        tool = "gh"
+        command_path = shutil.which("gh")
+        if command_path is None:
+            raise InstallerError(tool, "verify", "gh is installed but is not available on PATH")
+        command_version = self._binary_version(
+            Path(command_path),
+            ("--version",),
+            tool,
+            "gh version",
+        )
+        if compare_versions(command_version, package_version) != 0:
+            raise InstallerError(
+                tool,
+                "verify",
+                "gh command version {} does not match package version {}".format(
+                    command_version,
+                    extract_version(package_version),
+                ),
+            )
+        return command_version
+
+    def _run_gh(self) -> None:
+        tool = "gh"
+        installed = self._package_version_and_conflict(tool, "gh", "gh")
+        repository_configured = self._github_cli_repository_configured()
+        if installed is not None:
+            if not repository_configured:
+                raise InstallerError(
+                    tool,
+                    "repository conflict",
+                    "gh is installed, but the official GitHub CLI APT repository is not configured",
+                    "Remove the existing package or configure the official repository manually.",
+                )
+            command_version = self._verify_github_cli_installation(installed)
+            print("[apt-managed] gh {} (use apt to update)".format(command_version))
+            return
+
+        if self.check_only:
+            suffix = " (repository configured)" if repository_configured else ""
+            print("[missing] gh{}".format(suffix))
+            return
+
+        if not repository_configured:
+            self._configure_github_cli_repository()
+        self.runner.run_root(["apt-get", "update"], tool, "repository refresh")
+        self.runner.run_root(["apt-get", "install", "-y", "gh"], tool, "package install")
+
+        installed_after = self._package_version_and_conflict(tool, "gh", "gh")
+        if installed_after is None:
+            raise InstallerError(tool, "verify", "gh package is not installed")
+        command_version = self._verify_github_cli_installation(installed_after)
+        print("[installed] gh {} (future updates are managed by apt)".format(command_version))
 
     def _run_fzf(self) -> None:
         tool = "fzf"

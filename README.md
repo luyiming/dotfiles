@@ -51,3 +51,8 @@ APT owns their later updates. Rust is also installed only once and is then
 managed manually with `rustup`. Other selected tools are updated to their
 latest stable releases. Set `GITHUB_TOKEN` when needed to avoid unauthenticated
 GitHub API rate limits.
+
+GitHub CLI is available as `gh`. Its installer configures GitHub's official
+APT repository after verifying the published key fingerprints; later updates
+are handled by APT. Run `gh auth login` separately when authentication is
+needed.
