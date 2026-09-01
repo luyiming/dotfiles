@@ -57,6 +57,8 @@ Each smell reads *what it is* → *how to fix*; match it against the diff:
 
 ### 4. Spawn both sub-agents in parallel
 
+When spawning subagents, prefer a fresh context and provide each subagent with a self-contained task description as follows:
+
 **Standards sub-agent prompt** — include:
 
 - The full diff command and commit list.
