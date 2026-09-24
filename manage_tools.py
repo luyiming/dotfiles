@@ -53,6 +53,7 @@ TOOLS = (
     ToolSpec("bat", "cat clone with syntax highlighting"),
     ToolSpec("zoxide", "Smarter cd command"),
     ToolSpec("gdu", "Fast disk usage analyzer"),
+    ToolSpec("witr", "Trace why a process, port, container, or file is running"),
     ToolSpec("dust", "Intuitive du replacement"),
     ToolSpec("duf", "Disk usage/free utility"),
     ToolSpec("nvtop", "GPU process monitor"),
@@ -972,9 +973,7 @@ class Installer:
                 source_matches = source_path.read_text(encoding="utf-8") == GITHUB_CLI_SOURCE_LINE
             except OSError as exc:
                 raise InstallerError(tool, "repository conflict", str(exc)) from exc
-        keyring_is_regular = (
-            keyring_present and not keyring_path.is_symlink() and keyring_path.is_file()
-        )
+        keyring_is_regular = keyring_present and not keyring_path.is_symlink() and keyring_path.is_file()
         family_matches_expected = (
             len(family_matches) == 1
             and family_matches[0][0] == source_path
@@ -1504,6 +1503,40 @@ class Installer:
             tool,
         )
         print("[installed] gdu {}".format(release.version))
+
+    def _run_witr(self) -> None:
+        tool = "witr"
+        target = self.local_bin / "witr"
+        man_target = self.local_man1 / "witr.1"
+        installed = self._managed_binary_version(tool, "witr", target, identity="witr")
+        self._document_target(tool, man_target)
+        release = self._latest_release(tool, "pranshuparmar/witr")
+        if installed is not None and compare_versions(installed, release.version) >= 0:
+            print("[current] witr {}".format(installed))
+            return
+        if self.check_only:
+            if installed is None:
+                print("[missing] witr (latest {})".format(release.version))
+            else:
+                print("[update] witr {} -> {}".format(installed, release.version))
+            return
+
+        binary_asset = release.require_asset(tool, r"witr-linux-amd64")
+        man_asset = release.require_asset(tool, r"witr\.1")
+        binary = self._download_asset(tool, binary_asset)
+        man_source = self._download_asset(tool, man_asset)
+        os.chmod(binary, 0o755)
+        downloaded_version = self._binary_version(binary, ("--version",), tool, "witr")
+        if compare_versions(downloaded_version, release.version) != 0:
+            raise InstallerError(tool, "verify", "downloaded witr version does not match release")
+        self._atomic_install_files(
+            (
+                (binary, target, 0o755),
+                (man_source, man_target, 0o644),
+            ),
+            tool,
+        )
+        print("[installed] witr {}".format(release.version))
 
     def _run_nvtop(self) -> None:
         if self.platform.distro == "ubuntu":
