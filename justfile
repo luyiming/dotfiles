@@ -7,8 +7,8 @@ default:
 # Install the tmux configuration, backing up any existing configuration.
 install-tmux:
     @"$DOTFILES_REPO_ROOT/scripts/install-link.sh" \
-        "$DOTFILES_REPO_ROOT/tmux/.tmux.conf" \
-        "$HOME/.tmux.conf"
+        "$DOTFILES_REPO_ROOT/tmux" \
+        "$HOME/.config/tmux"
 
 # Install the shared agent instructions and skills.
 install-agents:

@@ -10,15 +10,16 @@ git clone https://github.com/luyiming/dotfiles.git ~/.dotfiles
 Create symbolic links for the configurations you want to use, e.g.:
 
 ```
-ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
+mkdir -p ~/.config
+ln -s ~/.dotfiles/tmux ~/.config/tmux
 ```
 
 ### Automatic Installation
-Then simply use `make` to install the dotfiles you want to use:
+Use `just` to install the dotfiles you want to use:
 
 ```
 cd ~/.dotfiles
-make tmux
+just install-tmux
 ```
 
 ### Command-line Tools
