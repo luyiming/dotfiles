@@ -65,5 +65,6 @@ Examples:
 
 Examples:
 
-- `.expect("config file should exist after initialization")`
+- `.expect("regex literal should be valid")`
+- `.expect("index should be within bounds after the length check")`
 - `.expect("channel should remain open while the worker is running")`
